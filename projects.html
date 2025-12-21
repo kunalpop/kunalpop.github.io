@@ -1,75 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Projects | Kunal Soni</title>
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Projects | Kunal Soni</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-<body>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+    </nav>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="projects.html" class="active">Projects</a>
-</nav>
+    <div class="container">
+      <h1>Projects</h1>
 
-<div class="container">
-  <h1>Projects</h1>
+      <div class="project">
+        <!-- Title at top center -->
+        <div class="project-header-title">
+          <h2>Extractive Question Answering</h2>
+        </div>
 
-  <div class="project">
-    <h2>Extractive Question Answering</h2>
-    <p>
-      Fine-tuned BERT with span-labelling head to build an extractive question answering system that, given a passage and a question in English, extracts
-      the answer as a contiguous span of text from the passage. 
-    </p>
-    <p><strong>Tech:</strong> Python, Fine-tuning, Transfer Learning </p>
-  </div>
+        <!-- Left and Right cards -->
+        <div class="project-content">
+          <!-- Left card: image + year -->
+          <div class="project-left-card">
+            <img
+              src="images/projects/extractive-question-answering-2025.png"
+              alt="Extractive Question Answering AI illustration"
+            />
+            <span class="year">2025</span>
+          </div>
 
-  <div class="project">
-    <h2>Gas Turbine Trip Prediction</h2>
-    <p>
-      Built a predictive analytics model to forecast trip of valves in gas turbines using machine learning.
-    </p>
-    <p><strong>Tech:</strong> Python, Machine Learning, Data Engineering, Feature Engineering </p>
-  </div>
+          <!-- Right card: description -->
+          <div class="project-right-card">
+            <p>
+              Fine-tuned BERT with span-labelling head to build an extractive
+              question answering system that extracts answers as a contiguous
+              span of text from a passage.
+            </p>
+            <p><strong>Tech:</strong> Python, Fine-tuning, Transfer Learning</p>
+            <p>
+              <strong>Management:</strong> team meetings, presentation,
+              documentation
+            </p>
+          </div>
+        </div>
+      </div>
 
-  <div class="project">
-    <h2>Generative AI Training App for Nurses</h2>
-    <p>
-      Developed a GenAI-powered mobile application to train nurses for the Occupational English Test preparation.
-    </p>
-    <p><strong>Tech:</strong> Llamaindex, RAG, VectorDB, React Native, Expressjs, MongoDB </p>
-  </div>
+      <div class="project">
+        <!-- Title at top center -->
+        <div class="project-header-title">
+          <h2>Generative AI Training App to Train Nurses in English</h2>
+        </div>
 
-  <div class="project">
-    <h2>Children’s Quiz Platform for the Govt. of India </h2>
-    <p>
-      Built a scalable quizzing platform, including two frontends and a backend, for MyGov.in to increase citizen engagement with children nationwide.
-    </p>
-    <p><strong>Tech:</strong> ReactJS (HTML, Tailwind-CSS), NestJS, PostgreSQL, Redis, Grafana, Docker, Software Architecture, DB Design </p>
-  </div>
+        <!-- Left and Right cards -->
+        <div class="project-content">
+          <!-- Left card: image + year -->
+          <div class="project-left-card">
+            <img
+              src="images/projects/genai-nurses-2024.png"
+              alt="Generative AI nurse English training app illustration"
+            />
+            <span class="year">2024</span>
+          </div>
 
-  <div class="project">
-    <h2> Automated Surgery Scheduler </h2>
-    <p>
-      Developed an automated scheduler that calculates optimal routes and heuristically allocates hospital operating theatre slots, ensuring no overlapping surgeries for surgeons traveling to multiple hospitals within a city in a given period of time. 
-    </p>
-    <p><strong>Tech:</strong> Python, Travelling Salesman (Vehicle Routing), Djikstra's Algorithm, Heuristics </p>
-  </div>
+          <!-- Right card: description -->
+          <div class="project-right-card">
+            <p>
+              Developed a Generative AI–powered mobile application to train
+              nurses for Occupational English Test (OET) preparation using
+              personalized, interactive learning experiences.
+            </p>
+            <p>
+              <strong>Tech:</strong> LlamaIndex, RAG, VectorDB, React Native,
+              Express.js, Python, MongoDB
+            </p>
+            <p>
+              <strong>Management:</strong> Scrum, project management, vendor
+              management
+            </p>
+          </div>
+        </div>
+      </div>
 
-  <div class="project">
-    <h2> Apparel Recommendation System </h2>
-    <p>
-      Built a hybrid content and collaborative recommendation system to recommend apparel to customers. 
-    </p>
-    <p><strong>Tech:</strong> R, Feature Engineering, Content Filtering, Collaborative Filtering, Hierarchical Clustering, Time Weighing, SQL </p>
-  </div>
-</div>
+      <div class="project">
+        <!-- Title at top center -->
+        <div class="project-header-title">
+          <h2>Motor and Health Insurance Renewal Backend</h2>
+        </div>
 
-<footer>
-  © 2025 Kunal Soni
-</footer>
+        <!-- Left and Right cards -->
+        <div class="project-content">
+          <!-- Left card: image + year -->
+          <div class="project-left-card">
+            <img
+              src="images/projects/insurance-renewal-2023.png"
+              alt="Motor and health insurance renewal backend illustration"
+            />
+            <span class="year">2023</span>
+          </div>
 
-</body>
+          <!-- Right card: description -->
+          <div class="project-right-card">
+            <p>
+              Built a scalable backend system for motor and health insurance
+              renewals for an insurance aggregator, enabling seamless policy
+              renewals, validations, and integrations with external partners.
+            </p>
+            <p><strong>Tech:</strong> NestJS, PostgreSQL, MongoDB</p>
+            <p>
+              <strong>Management:</strong> Scrum, project management, client
+              meetings
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <!-- Title at top center -->
+        <div class="project-header-title">
+          <h2>Automated Operation Theatre Scheduler</h2>
+        </div>
+
+        <!-- Left and Right cards -->
+        <div class="project-content">
+          <!-- Left card: image + year -->
+          <div class="project-left-card">
+            <img
+              src="images/projects/ot-scheduler-2022.png"
+              alt="Automated hospital operation theatre scheduling system illustration"
+            />
+            <span class="year">2022</span>
+          </div>
+
+          <!-- Right card: description -->
+          <div class="project-right-card">
+            <p>
+              Developed an automated scheduling system that computes optimal
+              travel routes and heuristically allocates hospital operating
+              theatre slots, ensuring zero overlap in surgeries for surgeons
+              traveling across multiple hospitals within a city over a given
+              time horizon.
+            </p>
+            <p>
+              <strong>Tech:</strong> Python, Vehicle Routing (TSP), Dijkstra’s
+              Algorithm, Heuristic Optimization
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <!-- Title at top center -->
+        <div class="project-header-title">
+          <h2>Apparel Recommendation System</h2>
+        </div>
+
+        <!-- Left and Right cards -->
+        <div class="project-content">
+          <!-- Left card: image + year -->
+          <div class="project-left-card">
+            <img
+              src="images/projects/apparel-recommender-2016.png"
+              alt="Apparel recommendation system illustration"
+            />
+            <span class="year">2016</span>
+          </div>
+
+          <!-- Right card: description -->
+          <div class="project-right-card">
+            <p>
+              Built a hybrid recommendation system combining content-based and
+              collaborative filtering techniques to deliver personalized apparel
+              recommendations, improving relevance and customer engagement.
+            </p>
+            <p>
+              <strong>Tech:</strong> R, Feature Engineering, Content Filtering,
+              Collaborative Filtering, Hierarchical Clustering, Time Weighting,
+              SQL
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <!-- Title at top center -->
+        <div class="project-header-title">
+          <h2>Gas Turbine Trip Prediction</h2>
+        </div>
+
+        <!-- Left and Right cards -->
+        <div class="project-content">
+          <!-- Left card: image + year -->
+          <div class="project-left-card">
+            <img
+              src="images/projects/turbune-analytics-2014.png"
+              alt="Gas turbine trip prediction system illustration"
+            />
+            <span class="year">2014</span>
+          </div>
+
+          <!-- Right card: description -->
+          <div class="project-right-card">
+            <p>
+              Built a predictive analytics model to anticipate valve trip events
+              in gas turbines using machine learning, enabling proactive
+              maintenance and reducing unplanned downtime.
+            </p>
+            <p>
+              <strong>Tech:</strong> Python, Machine Learning, Data Engineering,
+              Feature Engineering
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>© 2025 Kunal Soni</footer>
+  </body>
 </html>
-
