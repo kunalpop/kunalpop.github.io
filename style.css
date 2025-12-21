@@ -8,35 +8,34 @@ body {
 }
 
 /* ---------- Navigation Bar ---------- */
-/* ---------- Navigation Bar ---------- */
 nav {
   background: #111827;
   padding: 16px;
   text-align: center;
-  position: fixed; /* Fix the navbar */
-  top: 0;          /* Stick to top */
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;     /* Full width */
-  z-index: 1000;   /* Ensure it stays above other content */
+  width: 100%;
+  z-index: 1000;
 }
 
 /* Default nav links */
 nav a {
-  color: #ffffff; /* white */
+  color: #ffffff;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.2s ease;
 }
 
-/* Hover effect (color only) */
+/* Hover effect */
 nav a:hover {
-  color: #60a5fa; /* light blue */
+  color: #60a5fa;
 }
 
-/* Active (current) page */
+/* Active page */
 nav a.active {
-  color: #2563eb; /* strong blue */
+  color: #2563eb;
 }
 
 /* ---------- Layout ---------- */
@@ -72,7 +71,7 @@ h1 {
 h2 {
   font-weight: normal;
   color: #374151;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 p {
@@ -115,18 +114,156 @@ footer {
   margin-top: 60px;
 }
 
-/* ----------- Projects -------- */
+/* ---------- Project Card ---------- */
 .project {
+  display: flex;
+  flex-direction: column; /* title on top */
   background: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  padding: 1rem;
+  padding-top: 0.0rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-.project h2 {
-  margin-top: 0;
-}
-.project p {
-  color: #374151;
+  text-align: left;
+  box-sizing: border-box; /* include padding in width calculations */
+  width: 100%;
+  overflow: hidden; /* prevent children from overflowing */
 }
 
+/* Project title centered at top */
+.project-header-title {
+  text-align: center;
+  margin-bottom: 0.5 rem;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+/* Container for left and right cards */
+.project-content {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Left card: image + year */
+.project-left-card {
+  flex: 0 0 25%; /* 25% width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  background-color: #f3f4f6; /* light gray */
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Circle project image */
+.project-left-card img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #2563eb;
+}
+
+/* Year below image */
+.project-left-card .year {
+  top-margin: 1rem;
+  font-size: 1.5rem;
+  color: #6b7280;
+}
+
+/* Right card: description */
+.project-right-card {
+  flex: 0 0 74%; /* 75% width */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem; /* reduced spacing */
+  color: #374151;
+  background-color: #f3f4f6; /* light gray */
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-sizing: border-box;
+  overflow-wrap: break-word; /* prevent long words from overflowing */
+}
+
+
+/* Optional: responsive adjustment */
+@media (max-width: 768px) {
+  .project-content {
+    flex-direction: column;
+  }
+  .project-left-card, .project-right-card {
+    flex: 1 1 100%;
+    align-items: center;
+  }
+  .project-right-card {
+    text-align: center;
+  }
+}
+
+/* ---------- Quotes ---------- */
+.quotes {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 24px 28px;
+  background: #f9fafb;
+  border-left: 5px solid #111827;
+  border-radius: 8px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #111827;
+}
+
+/* ---------- Responsive (Mobile) ---------- */
+@media (max-width: 600px) {
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-header img {
+    width: 100%;
+    height: 180px;
+  }
+}
+
+/* ---------- Dark Mode ---------- */
+.dark-toggle {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* Dark theme styles */
+body.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body.dark nav {
+  background: #020617;
+}
+
+body.dark .project {
+  background: #020617;
+  box-shadow: none;
+}
+
+body.dark p,
+body.dark h2,
+body.dark .year {
+  color: #cbd5f5;
+}
+
+body.dark footer {
+  color: #94a3b8;
+}
