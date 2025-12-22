@@ -239,7 +239,7 @@ footer {
   height: 8rem;
   object-fit: cover;
   border-radius: 50%;
-  border: 0.5rem solid #2563eb;
+  border: 0.1rem solid #2563eb;
 }
 
 /* Year below image */
@@ -323,3 +323,4 @@ footer {
     color: #666;
   }
 }
+
