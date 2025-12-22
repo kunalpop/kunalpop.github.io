@@ -192,6 +192,7 @@ footer {
   display: flex;
   flex-direction: column; /* title on top */
   background: #ffffff;
+  align-items: center;
   padding: 1rem;
   padding-top: 0rem;
   border-radius: 0.5rem;
@@ -323,6 +324,7 @@ footer {
     color: #666;
   }
 }
+
 
 
 
