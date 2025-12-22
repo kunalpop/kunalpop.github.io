@@ -192,7 +192,6 @@ footer {
   display: flex;
   flex-direction: column; /* title on top */
   background: #ffffff;
-  align-items: center;
   padding: 1rem;
   padding-top: 0rem;
   border-radius: 0.5rem;
@@ -241,6 +240,7 @@ footer {
   object-fit: cover;
   border-radius: 50%;
   border: 0.1rem solid #2563eb;
+  margin-top: 0.5rem;
 }
 
 /* Year below image */
@@ -324,6 +324,7 @@ footer {
     color: #666;
   }
 }
+
 
 
 
