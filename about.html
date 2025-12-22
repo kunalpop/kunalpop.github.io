@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>About | Kunal Soni</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>About | Kunal Soni</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-<nav>
-  <input type="checkbox" id="menu-toggle">
+      <div id="main-menu" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="projects.html">Projects</a>
+      </div>
+    </nav>
 
-  <label for="menu-toggle" class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
 
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About</a>
-    <a href="projects.html">Projects</a>
-  </div>
-</nav>
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+    </script>
 
-<div class="container">
-  <h1>About Me</h1>
+    <div class="container">
+      <h1>About Me</h1>
 
-  <p>
-    I am a Master of Computing student at the National University of Singapore (NUS) with over a decade of experience in building data-driven and AI-powered products in multinationals and promising startups. My background spans Amazon, GE Global Research, TATA R&D, HealthTech, EdTech, FinTech, and InsureTech, where I’ve led end-to-end development of scalable information systems in forecasting, product recommendation, AI bots, analytics platforms, and full-stack software development. Currently, I am deepening and broadening my knowledge in artificial intelligence, big data systems, and web3 technologies, with a strong interest in applying AI to real-world business problems. I strive to transform knowledge into impactful and meaningful products that address real-world problems and add lasting value to society.
-  </p>
+      <p>
+        I am a Master of Computing student at the National University of
+        Singapore (NUS) with over a decade of experience in building data-driven
+        and AI-powered products in multinationals and promising startups. My
+        background spans Amazon, GE Global Research, TATA R&D, HealthTech,
+        EdTech, FinTech, and InsureTech, where I’ve led end-to-end development
+        of scalable information systems in forecasting, product recommendation,
+        AI bots, analytics platforms, and full-stack software development.
+        Currently, I am deepening and broadening my knowledge in artificial
+        intelligence, big data systems, and web3 technologies, with a strong
+        interest in applying AI to real-world business problems. I strive to
+        transform knowledge into impactful and meaningful products that address
+        real-world problems and add lasting value to society.
+      </p>
 
-  <p>
-    Outside of my professional pursuits, I stay active and intellectually engaged through a diverse set of interests. I enjoy playing cricket, swimming, and working out at the gym, activities that help me maintain discipline and fitness and keep me in shape. I am also an avid reader with a strong interest in science fiction and finance. I am particularly drawn to ideas that explore the future, technology, and ethics. Philip K. Dick and Isaac Asimov are two science fiction authors whom I admire. I also have a keen interest in quantitative finance, especially inspired by the time-tested principles of value investing advocated by Warren Buffett and Benjamin Graham. Additionally, I love to travel and meet new people, learning about their cultures, cuisines, and lived experiences — an approach that continually enriches me and shapes my perspective on life.
-  </p>
+      <p>
+        Outside of my professional pursuits, I stay active and intellectually
+        engaged through a diverse set of interests. I enjoy playing cricket,
+        swimming, and working out at the gym, activities that help me maintain
+        discipline and fitness and keep me in shape. I am also an avid reader
+        with a strong interest in science fiction and finance. I am particularly
+        drawn to ideas that explore the future, technology, and ethics. Philip
+        K. Dick and Isaac Asimov are two science fiction authors whom I admire.
+        I also have a keen interest in quantitative finance, especially inspired
+        by the time-tested principles of value investing advocated by Warren
+        Buffett and Benjamin Graham. Additionally, I love to travel and meet new
+        people, learning about their cultures, cuisines, and lived experiences —
+        an approach that continually enriches me and shapes my perspective on
+        life.
+      </p>
+    </div>
 
-<footer>
-  © 2025 Kunal Soni
-</footer>
-
-</body>
+    <footer>© 2025 Kunal Soni</footer>
+  </body>
 </html>

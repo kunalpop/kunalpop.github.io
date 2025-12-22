@@ -7,13 +7,11 @@
   </head>
   <body>
     <nav>
-      <input type="checkbox" id="menu-toggle" />
-
-      <label for="menu-toggle" class="hamburger">
+      <button class="hamburger" aria-label="Toggle menu">
         <span></span>
         <span></span>
         <span></span>
-      </label>
+      </button>
 
       <div class="nav-links">
         <a href="index.html" class="active">Home</a>
@@ -21,6 +19,15 @@
         <a href="projects.html">Projects</a>
       </div>
     </nav>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+    </script>
 
     <div class="container">
       <h1>Welcome to My Website!</h1>
