@@ -7,43 +7,66 @@ body {
   line-height: 1.6;
 }
 
-/* ---------- Navigation Bar ---------- */
+/* ---------- Navigation Bar (Desktop) ---------- */
 nav {
   background: #111827;
-  padding: 16px;
-  text-align: center;
-  position: fixed;
+  padding: 1rem;
+  display: flex; /* Changed from text-align: center to space elements */
+  align-items: center;
+  padding: 0 2rem;
+  background: #111827;
+  height: 4rem;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 500;
 }
 
-/* Default nav links */
-nav a {
+.logo {
   color: #ffffff;
-  margin: 0 15px;
-  text-decoration: none;
   font-weight: bold;
-  transition: color 0.2s ease;
 }
 
-/* Hover effect */
+.nav-links {
+  display: flex;
+  gap: 10rem;
+  margin: 0 auto;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
 nav a:hover {
   color: #60a5fa;
 }
-
-/* Active page */
 nav a.active {
   color: #2563eb;
 }
 
+/* Hide Toggle Elements on Desktop */
+#menu-toggle,
+.hamburger {
+  display: none;
+}
+
 /* ---------- Layout ---------- */
 .container {
-  max-width: 900px;
-  margin: 80px auto;
-  padding: 0 20px;
+  max-width: 80%;
+  margin: 4rem auto;
+  padding: 0 2rem;
   text-align: center;
+}
+
+.container h1 {
+  margin-top: 1rem;
+  font-size: 3rem;
+}
+
+.container p {
+  font-size: 1.2rem;
 }
 
 /* ---------- Profile Section ---------- */
@@ -53,29 +76,41 @@ nav a.active {
   align-items: center;
 }
 
+.profile h1 {
+  margin: 0.5rem;
+  font-size: 2.5rem;
+}
+
 .profile img {
-  width: 160px;
-  height: 160px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
-  border: 4px solid #2563eb;
+  margin-bottom: 0.5rem;
+  border: 0.2rem solid #2563eb;
 }
 
 /* ---------- Typography ---------- */
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-h2 {
+.profile h2 {
   font-weight: normal;
   color: #374151;
-  margin-bottom: 8px;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-p {
+.profile p {
   color: #374151;
+}
+
+.profile .tagline {
+  max-width: 60%;
+  margin-top: 2rem;
+  font-family: "BBH Bartle", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  font-size: 0.9rem;
+  font-weight: 900;
 }
 
 /* ---------- Social Links ---------- */
@@ -84,10 +119,11 @@ p {
   text-decoration: none;
   color: #2563eb;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .social-links a:hover {
-  color: #1d4ed8;
+  color: #60a5fa;
 }
 
 /* ---------- Call to Action Buttons ---------- */
@@ -100,6 +136,7 @@ p {
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .cta a:hover {
@@ -121,9 +158,9 @@ footer {
   background: #ffffff;
   padding: 1rem;
   padding-top: 0rem;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
   text-align: left;
   box-sizing: border-box; /* include padding in width calculations */
   width: 100%;
@@ -166,7 +203,7 @@ footer {
   height: 8rem;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #2563eb;
+  border: 0.5rem solid #2563eb;
 }
 
 /* Year below image */
@@ -196,11 +233,52 @@ footer {
   margin-bottom: 0rem;
 }
 
+/* ---------- Quotes ---------- */
+.quote {
+  padding: 1rem;
+  border-left: 1.5rem solid #374151;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+
+  /* Optional: Ensure the background doesn't overlap the left border */
+  overflow: hidden;
+
+  .original {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+
+  .translation {
+    font-size: 1rem;
+    font-style: italic;
+    color: #666;
+  }
+}
+
+/* ---------- Responsive (Mobile) ---------- */
+
 /* Optional: responsive adjustment */
-@media (max-width: 768px) {
+@media (max-width: 786px) {
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-header img {
+    width: 100%;
+    height: 180px;
+  }
+
   .project-content {
     flex-direction: column;
   }
+
   .project-left-card,
   .project-right-card {
     flex: 1 1 100%;
@@ -211,64 +289,51 @@ footer {
   }
 }
 
-/* ---------- Quotes ---------- */
-.quotes {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 24px 28px;
-  background: #f9fafb;
-  border-left: 5px solid #111827;
-  border-radius: 8px;
-  font-family: "Georgia", "Times New Roman", serif;
-  color: #111827;
-}
+/* ---------- Responsive Design (Navigation) ---------- */
+@media (max-width: 48rem) {
+  /* 768px converted to rem */
 
-/* ---------- Responsive (Mobile) ---------- */
-@media (max-width: 600px) {
-  .project-header {
+  .hamburger {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    gap: 0.3125rem; /* 5px */
+    cursor: pointer;
+    z-index: 1000;
   }
 
-  .project-header img {
+  .hamburger span {
+    width: 1.5625rem; /* 25px */
+    height: 0.1875rem; /* 3px */
+    background: white;
+    border-radius: 0.125rem; /* 2px */
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%; /* Sits exactly at the bottom of the nav */
+    left: 0;
+    gap: 1rem;
     width: 100%;
-    height: 180px;
+    background: #111827;
+    display: none; /* Hidden until toggled */
+    flex-direction: column;
+    padding: 1rem 0;
+    border-top: 0.0625rem solid #1f2937; /* 1px subtle divider */
   }
-}
 
-/* ---------- Dark Mode ---------- */
-.dark-toggle {
-  position: absolute;
-  right: 20px;
-  top: 14px;
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: #ffffff;
-}
+  nav a {
+    margin: 1rem 0; /* Spacing between vertical links */
+    display: block;
+    text-align: center;
+    font-size: 1.125rem; /* Slightly larger for mobile tap targets */
+  }
 
-/* Dark theme styles */
-body.dark {
-  background: #0f172a;
-  color: #e5e7eb;
-}
+  /* Logic: If checkbox is checked, show nav-links */
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
 
-body.dark nav {
-  background: #020617;
-}
-
-body.dark .project {
-  background: #020617;
-  box-shadow: none;
-}
-
-body.dark p,
-body.dark h2,
-body.dark .year {
-  color: #cbd5f5;
-}
-
-body.dark footer {
-  color: #94a3b8;
+  #menu-toggle {
+    display: none;
+  }
 }

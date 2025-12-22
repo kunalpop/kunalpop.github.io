@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "name": "Extractive Question Answering",
+      "year": 2025,
+      "image": "/images/projects/A_collection_of_seven_digital_illustrations_in_a_g.png",
+      "alt": "AI generated illustration of BERT-based question answering system analyzing text"
+    },
+    {
+      "name": "Generative AI Training App for Nurses",
+      "year": 2024,
+      "image": "/images/projects/A_collection_of_seven_digital_illustrations_in_a_g.png",
+      "alt": "AI generated illustration of nurses using a mobile app powered by generative AI"
+    },
+    {
+      "name": "Children’s Quizzing Platform – Govt. of India",
+      "year": 2024,
+      "image": "/images/projects/A_collection_of_seven_digital_illustrations_in_a_g.png",
+      "alt": "AI generated illustration of children participating in an online quiz platform"
+    },
+    {
+      "name": "Motor & Health Insurance Renewal Backend",
+      "year": 2023,
+      "image": "/images/projects/A_collection_of_seven_digital_illustrations_in_a_g.png",
+      "alt": "AI generated illustration of insurance backend system with APIs and databases"
+    },
+    {
+      "name": "Automated Operation Theatre Scheduler",
+      "year": 2022,
+      "image": "/images/projects/A_collection_of_seven_digital_illustrations_in_a_g.png",
+      "alt": "AI generated illustration of hospital operation theatre scheduling and route optimization"
+    },
+    {
+      "name": "Apparel Recommendation System",
+      "year": 2016,
+      "image": "/images/projects/A_collection_of_seven_digital_illustrations_in_a_g.png",
+      "alt": "AI generated illustration of fashion recommendation system with clothing items and data"
+    },
+    {
+      "name": "Gas Turbine Trip Prediction",
+      "year": 2014,
+      "image": "/images/projects/A_collection_of_seven_digital_illustrations_in_a_g.png",
+      "alt": "AI generated illustration of gas turbines with predictive analytics dashboard"
+    }
+  ]
+}

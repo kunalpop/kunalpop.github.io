@@ -7,9 +7,19 @@
   </head>
   <body>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html" class="active">Projects</a>
+      <input type="checkbox" id="menu-toggle" />
+
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+      </div>
     </nav>
 
     <div class="container">
@@ -73,8 +83,9 @@
               Developed a Generative AI–powered mobile application to train
               nurses for Occupational English Test (OET) preparation. It
               consisted of a RAG-based chatbot to help nurses prepare for the
-              test by comparing their responses to AI-based responses, improving
-              self-assessment and training efficiency.
+              test by comparing their responses to questions with AI-based
+              responses to same questions, improving self-assessment and
+              training efficiency.
             </p>
             <p>
               <strong>Tech:</strong> LlamaIndex, RAG, VectorDB, React Native,
