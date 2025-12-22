@@ -115,7 +115,7 @@ nav .nav-links a.active {
 
 .profile h1 {
   margin: 0.5rem;
-  font-size: 2.rem;
+  font-size: 1.2rem;
 }
 
 .profile img {
@@ -323,5 +323,6 @@ footer {
     color: #666;
   }
 }
+
 
 
