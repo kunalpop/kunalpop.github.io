@@ -235,7 +235,7 @@ footer {
 
 /* ---------- Quotes ---------- */
 .quote {
-  padding: 1rem;
+  padding: 3rem;
   border-left: 1.5rem solid #374151;
   font-family: "Inter", sans-serif;
   background-color: #ffffff;
@@ -337,3 +337,4 @@ footer {
     display: none;
   }
 }
+
