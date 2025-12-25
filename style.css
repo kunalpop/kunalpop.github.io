@@ -350,3 +350,49 @@ footer {
   color: #6b7280;
   margin-top: 1rem;
 }
+
+/*wechat qr*/
+.qr-container h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #16a34a;
+}
+
+.qr-container i {
+  margin-right: 0.4rem;
+}
+.qr-container img {
+  transition: transform 0.25s ease;
+}
+
+.qr-container img:hover {
+  transform: scale(1.05);
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  text-decoration: none;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .qr-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .qr-container img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .qr-container h1 {
+    font-size: 1.25rem;
+  }
+}
