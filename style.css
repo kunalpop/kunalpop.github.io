@@ -39,7 +39,7 @@ nav .nav-links {
 nav .nav-links a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 900;
 }
 
 nav .nav-links a:hover {
@@ -50,28 +50,68 @@ nav .nav-links a.active {
   color: #2563eb;
 }
 
-/* Hamburger */
-.hamburger {
-  position: absolute; /* DOES NOT AFFECT CENTERING */
-  left: 0;
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
+/*Nav bar name*/
+.nav-name {
+  position: absolute;
+  right: -9%; /* Adjust as needed for "extreme" right */
+  top: 50%; /* Move down 50% from the top */
+  transform: translateY(-50%); /* Pull back up by half its own height */
+
+  font-weight: 900;
+  color: white;
+  display: none; /* Changed from 'none' to see it */
+  white-space: nowrap; /* Prevents name from wrapping to a second line */
 }
 
+/* Hamburger */
+.hamburger {
+  position: absolute;
+  left: -10%;
+  display: none;
+  background: none;
+  cursor: pointer;
+  /* Use transparent border initially so layout doesn't shift on hover */
+  border: 0.01rem solid transparent;
+  border-radius: 0.15rem;
+  transition: all 0.1s ease; /* Optional: smooths the color transition */
+}
+
+/* 1. HOVER STATE: Border appears and spans turn light blue */
+.hamburger:hover {
+  border-color: #60a5fa;
+}
+
+.hamburger:hover span {
+  background-color: #60a5fa !important;
+}
+
+/* 2. ACTIVE STATE: Border and spans turn darker blue */
+/* Note: Targeted .hamburger.is-active span to ensure bars change color */
+.hamburger.is-active {
+  border-color: #2563eb;
+}
+
+.hamburger.is-active span {
+  background-color: #2563eb !important;
+}
+
+/* BASE SPAN STYLES */
 .hamburger span {
   display: block;
   width: 1.6rem;
-  height: 0.2rem;
-  background: white;
-  border-radius: 2px;
+  height: 0.15rem;
+  background-color: white; /* Removed !important here to allow hover/active overrides */
+  border-radius: 0.05rem;
   margin: 0.3rem 0;
 }
 
 /* ---------- Mobile Navigation ---------- */
 @media (max-width: 48rem) {
   .hamburger {
+    display: block;
+  }
+
+  .nav-name {
     display: block;
   }
 
@@ -108,7 +148,7 @@ nav .nav-links a.active {
 
 .container h1 {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .container p {
@@ -124,7 +164,7 @@ nav .nav-links a.active {
 
 .profile h1 {
   margin: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .profile img {
@@ -175,8 +215,10 @@ nav .nav-links a.active {
 }
 
 .social-links a i {
-  font-size: 1.2rem; /* icon size */
-  transition: transform 0.2s ease, color 0.2s ease;
+  font-size: 1.8rem; /* icon size */
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
 }
 
 .social-links a:hover i {
