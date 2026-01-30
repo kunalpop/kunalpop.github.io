@@ -54,8 +54,6 @@ nav .nav-links a.active {
 .nav-name {
   position: absolute;
   right: -9%; /* Adjust as needed for "extreme" right */
-  top: 50%; /* Move down 50% from the top */
-  transform: translateY(-50%); /* Pull back up by half its own height */
 
   font-weight: 900;
   color: white;
