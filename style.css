@@ -117,6 +117,10 @@ nav .nav-links a.active {
     display: block;
   }
 
+  .nav-inner {
+    overflow: visible !important;
+  }
+
   nav .nav-links {
     position: absolute;
     top: 4rem;
