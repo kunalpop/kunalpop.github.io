@@ -17,6 +17,7 @@ nav {
   height: 4rem;
   background: #111827;
   z-index: 1000;
+  overflow: visible;
 }
 
 /* Inner nav aligns center with container */
@@ -128,6 +129,7 @@ nav .nav-links a.active {
     gap: 1rem;
     padding: 1rem 0;
     display: none;
+    overflow-y: auto;
   }
 
   nav .nav-links.open {
