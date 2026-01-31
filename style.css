@@ -113,6 +113,17 @@ nav .nav-links a.active {
     display: block;
   }
 
+  .nav-inner {
+    overflow: auto; /* Required to allow content to exist outside if needed */
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar in IE and Edge */
+  }
+
+  /* Hides scrollbar in Chrome, Safari, and Opera */
+  .nav-inner::-webkit-scrollbar {
+    display: none;
+  }
+
   nav .nav-links {
     position: absolute;
     top: 4rem;
