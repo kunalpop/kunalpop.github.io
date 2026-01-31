@@ -1,8 +1,4 @@
 /* ---------- Global Styles ---------- */
-html {
-  scrollbar-gutter: stable;
-}
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -10,7 +6,6 @@ body {
   color: #111827;
   line-height: 1.6;
   overflow-x: hidden;
-  overflow-y: auto;
 }
 
 /* ---------- Navigation Bar ---------- */
@@ -22,7 +17,6 @@ nav {
   height: 4rem;
   background: #111827;
   z-index: 1000;
-  overflow: hidden;
 }
 
 /* Inner nav aligns center with container */
@@ -34,7 +28,6 @@ nav {
   align-items: center;
   justify-content: center; /* CENTER NAV LINKS */
   position: relative; /* ANCHOR HAMBURGER */
-  overflow: hidden;
 }
 
 /* Nav links – desktop */
