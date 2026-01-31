@@ -117,7 +117,7 @@ nav .nav-links a.active {
   }
 
   .nav-name {
-    display: flex;
+    display: block;
   }
 
   nav .nav-links {
