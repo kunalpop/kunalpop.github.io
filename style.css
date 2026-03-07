@@ -1,110 +1,167 @@
-/* ---------- Global Styles ---------- */
+/* =====================================================
+   COLOR VARIABLES
+   Change colors here to update the entire website
+===================================================== */
+:root {
+  --color-button: white;
+  --color-button-clicked: #057cf3;
+  --color-button-hover: skyblue;
+
+  --color-image-border: var(--color-button-clicked);
+
+  --color-hamburger: var(--color-button);
+  --color-hamburger-hover: var(--color-button-hover);
+
+  --color-nav-background: #111827;
+  --color-nav-border: var(--color-image-border);
+  --color-nav-text: var(--color-button);
+
+  --color-container-outer: #ffffff;
+  --color-container-inner: #f3f4f6;
+  --color-container-outline: #e5e7eb;
+
+  --color-text-dark: #111827;
+  --color-text-muted: #6b7280;
+  --color-text-light: #f9fafb;
+
+  --shadow-soft: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
+}
+
+/* =====================================================
+   GLOBAL STYLES
+===================================================== */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  background-image: url("./images/singapore_QHD.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  min-height: 100vh;
+  width: 100%;
+
   margin: 0;
-  background: #f9fafb;
-  color: #111827;
+  color: var(--color-text);
   line-height: 1.6;
   overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
 }
 
-/* ---------- Navigation Bar ---------- */
+/* =====================================================
+   NAVIGATION BAR
+===================================================== */
 nav {
-  position: fixed; /* FIXED TO TOP */
+  position: fixed;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 4rem;
-  background: #111827;
+
+  background: var(--color-nav-background);
   z-index: 1000;
-  overflow: visible;
+  border-bottom: 2px solid var(--color-nav-border);
 }
 
-/* Inner nav aligns center with container */
+/* inner nav container */
 .nav-inner {
-  max-width: 80%; /* SAME AS .container */
+  max-width: 80%;
   margin: 0 auto;
+
   height: 100%;
+
   display: flex;
   align-items: center;
-  justify-content: center; /* CENTER NAV LINKS */
-  position: relative; /* ANCHOR HAMBURGER */
+  justify-content: center;
+
+  position: relative;
 }
 
-/* Nav links – desktop */
+/* =====================================================
+   NAVIGATION LINKS
+===================================================== */
 nav .nav-links {
   display: flex;
   gap: 4rem;
 }
 
 nav .nav-links a {
-  color: white;
+  color: var(--color-button);
   text-decoration: none;
   font-weight: 900;
 }
 
 nav .nav-links a:hover {
-  color: #60a5fa;
+  color: var(--color-button-hover);
 }
 
 nav .nav-links a.active {
-  color: #2563eb;
+  color: var(--color-button-clicked);
 }
 
-/*Nav bar name*/
+/* =====================================================
+   NAV NAME
+===================================================== */
 .nav-name {
   position: absolute;
-  right: -9%; /* Adjust as needed for "extreme" right */
-
+  right: -9%;
   font-weight: 900;
-  color: white;
-  display: none; /* Changed from 'none' to see it */
-  white-space: nowrap; /* Prevents name from wrapping to a second line */
+  color: var(--color-nav-text);
+  display: none;
+  white-space: nowrap;
 }
 
-/* Hamburger */
+/* =====================================================
+   HAMBURGER MENU
+===================================================== */
 .hamburger {
   position: absolute;
   left: -10%;
+
   display: none;
-  background: none;
   cursor: pointer;
-  /* Use transparent border initially so layout doesn't shift on hover */
-  border: 0.01rem solid transparent;
+
+  background: none;
+
+  border: 0.01rem solid var(--color-hamburger);
   border-radius: 0.15rem;
-  transition: all 0.1s ease; /* Optional: smooths the color transition */
+
+  transition: all 0.1s ease;
 }
 
-/* 1. HOVER STATE: Border appears and spans turn light blue */
+/* hover */
 .hamburger:hover {
-  border-color: #60a5fa;
+  border-color: var(--color-hamburger-hover);
 }
 
 .hamburger:hover span {
-  background-color: #60a5fa !important;
+  background-color: var(--color-hamburger-hover);
 }
 
-/* 2. ACTIVE STATE: Border and spans turn darker blue */
-/* Note: Targeted .hamburger.is-active span to ensure bars change color */
+/* active */
 .hamburger.is-active {
-  border-color: #2563eb;
+  border-color: var(--color-hamburger-clicked);
 }
-
 .hamburger.is-active span {
-  background-color: #2563eb !important;
+  background-color: var(--color-hamburger-clicked);
 }
 
-/* BASE SPAN STYLES */
+/* bars */
 .hamburger span {
   display: block;
   width: 1.6rem;
   height: 0.15rem;
-  background-color: white; /* Removed !important here to allow hover/active overrides */
+  background-color: var(--color-hamburger);
   border-radius: 0.05rem;
   margin: 0.3rem 0;
 }
 
-/* ---------- Mobile Navigation ---------- */
+/* =====================================================
+   MOBILE NAVIGATION
+===================================================== */
 @media (max-width: 48rem) {
   .hamburger {
     display: block;
@@ -114,22 +171,33 @@ nav .nav-links a.active {
     display: block;
   }
 
-  /* Hides scrollbar in Chrome, Safari, and Opera */
   .nav-inner::-webkit-scrollbar {
     display: none;
+  }
+
+  .nav {
+    border-color: var(--color-nav-border);
+    box-shadow: var(--shadow-soft);
   }
 
   nav .nav-links {
     position: absolute;
     top: 4rem;
     left: 0;
+
     width: 100%;
-    background: #111827;
+    padding: 1rem 0;
+
+    background: var(--color-nav-background);
+
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem 0;
+
     display: none;
     overflow-y: auto;
+    border: 2px solid var(--color-nav-border);
+    box-shadow: var(--shadow-soft);
+    border-top: none;
   }
 
   nav .nav-links.open {
@@ -143,131 +211,240 @@ nav .nav-links a.active {
   }
 }
 
-/* ---------- Layout ---------- */
+/* =====================================================
+   PAGE LAYOUT
+===================================================== */
 .container {
-  max-width: 80%; /* MATCHES NAV */
-  margin: 6rem auto 4rem; /* OFFSET FIXED NAV */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 80%;
+  margin: 6rem auto 1rem;
   padding: 0 2rem;
+
   text-align: center;
+
+  background-color: var(--color-container-outline);
+  background: rgba(249, 250, 251, 0.2);
+
+  flex: 1;
 }
 
 .container h1 {
   margin-top: 1rem;
   font-size: 2rem;
+  margin-bottom: 1.3rem;
 }
 
 .container p {
   font-size: 1rem;
+  color: var(--color-text-muted);
 }
 
-/* ---------- Profile Section ---------- */
-.profile {
+/* =====================================================
+   INTRO SECTION
+===================================================== */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: var(--color-container-outer);
+
+  padding: 1rem;
+  padding-top: 0;
+
+  border-radius: 0.5rem;
+  margin: 2rem;
+
+  box-shadow: var(--shadow-soft);
+}
+
+.intro p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1 1 auto;
+  justify-content: center;
+  font-size: clamp(1rem, 1.53rem, 1.9rem);
 }
 
-.profile h1 {
-  margin: 0.5rem;
+@media (max-width: 768px) {
+  .intro {
+    padding: 0.5rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .intro p {
+    margin-top: 1rem;
+    font-size: clamp(0.4rem, 0.805rem, 1.2rem);
+  }
+}
+
+/* =====================================================
+   PROFILE SECTION
+===================================================== */
+
+.container .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* push top and bottom apart */
+  align-items: center;
+  flex: 1 1 auto; /* allows profile to grow */
+  width: 100%;
+}
+
+.container .profile h1 {
+  margin-top: 1.6rem;
   font-size: 2rem;
+  color: var(--color-text-light);
 }
 
-.profile img {
-  width: 8rem;
-  height: 8rem;
+.container .profile img {
+  width: clamp(9rem, 11rem, 13rem);
+  height: clamp(9rem, 11rem, 13rem);
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 0.5rem;
-  border: 0.2rem solid #2563eb;
+  margin: 1rem 0 0 0;
+  border: 0.2rem solid var(--color-image-border);
+  box-shadow: var(--shadow-soft);
 }
 
-.profile h2 {
-  font-weight: normal;
-  color: #374151;
-  font-size: 1rem;
-  margin-bottom: 1rem;
+.container .profile .profile-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
 }
 
-.profile p {
-  color: #374151;
-  font-size: 1rem;
+.container .profile h2,
+.container .profile p {
+  color: var(--color-text-light);
+  font-size: clamp(0.8rem, 1rem, 1.2rem);
 }
 
-.profile .tagline {
+.container .profile .tagline {
   max-width: 60%;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   letter-spacing: 0.2em;
   font-size: 0.9rem;
   font-weight: 900;
-  margin-bottom: 1rem;
 }
 
-/* ---------- Social Links ---------- */
-.social-links {
-  margin-top: 2rem;
+/*====================================================
+   SOCIAL MEDIA LINKS
+===================================================== */
+
+.container .profile .social-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem; /* spacing between icons */
+  gap: 2rem;
+  margin-bottom: 3rem;
+  background-color: var(--color-nav-background);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 0.15rem solid var(--color-button-clicked);
+  box-shadow: var(--shadow-soft);
 }
 
-.social-links a {
-  color: #2563eb;
-  text-decoration: none; /* remove underline */
+.container .profile .social-links a {
+  color: var(--color-button);
+  text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
-.social-links a i {
-  font-size: 1.8rem; /* icon size */
+.container .profile .social-links a i {
+  font-size: 1.8rem;
   transition:
     transform 0.2s ease,
     color 0.2s ease;
 }
 
-.social-links a:hover i {
-  color: #60a5fa;
+.container .profile .social-links a:hover i {
+  color: var(--color-button-hover);
   transform: translateY(-2px);
 }
 
-/* ---------- Call to Action Buttons ---------- */
+@media (max-width: 768px) {
+  .container .profile h1 {
+    font-size: 1.8rem;
+    margin-top: 1.6rem;
+  }
+
+  .container .profile img {
+    width: clamp(8rem, 10rem, 12rem);
+    height: clamp(8rem, 10rem, 12rem);
+  }
+
+  .container .profile .tagline {
+    max-width: 80%;
+    letter-spacing: 0.15em;
+  }
+
+  .container .profile .social-links {
+    gap: 1.5rem;
+    margin-top: 3rem; /* gap from tagline */
+    margin-bottom: 2rem;
+  }
+
+  .container .profile .social-links a i {
+    font-size: 1.6rem;
+  }
+}
+
+/* =====================================================
+   CALL TO ACTION BUTTONS
+===================================================== */
 .cta a {
   display: inline-block;
+
   margin: 25px 10px;
   padding: 12px 24px;
-  background: #2563eb;
-  color: #ffffff;
+
+  background: var(--color-button);
+  color: var(--color-light);
+
   border-radius: 6px;
+
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
 }
 
 .cta a:hover {
-  background: #1d4ed8;
+  background: var(--color-button-hover);
 }
 
-/* ---------- Project Card ---------- */
+/* =====================================================
+   PROJECT CARD
+===================================================== */
 .project {
   display: flex;
-  flex-direction: column; /* title on top */
-  background: #ffffff;
+  flex-direction: column;
+
+  background: var(--color-container-outer);
+
   padding: 1rem;
-  padding-top: 0rem;
+  padding-top: 0;
+
   border-radius: 0.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
+  margin: 2rem;
+
+  box-shadow: var(--shadow-soft);
   text-align: left;
-  box-sizing: border-box; /* include padding in width calculations */
-  width: auto;
-  overflow: hidden; /* prevent children from overflowing */
 }
 
-/* Project title centered at top */
 .project-header-title {
   text-align: center;
-  margin-bottom: 0.5 rem;
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.2rem, 1.4rem, 1.6rem);
 }
 
 .project-header-title h2 {
@@ -275,78 +452,63 @@ nav .nav-links a.active {
   font-size: 1.2rem;
 }
 
-/* Container for left and right cards */
 .project-content {
   display: flex;
   gap: 0.5rem;
-  width: 100%;
-  box-sizing: border-box;
 }
 
-/* Left card: image + year */
+/* project left */
 .project-left-card {
-  flex: 0 0 25%; /* 25% width */
+  flex: 0 0 25%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  gap: 0.5rem;
-  background-color: #f3f4f6; /* light gray */
+
+  background-color: var(--color-container-inner);
+
   padding: 0.5rem;
   border-radius: 8px;
-  box-sizing: border-box;
 }
 
-/* Circle project image */
 .project-left-card img {
-  width: 10rem;
-  height: 9rem;
+  width: clamp(6rem, 8rem, 10rem);
+  height: clamp(6rem, 8rem, 9rem);
+
   object-fit: cover;
   border-radius: 50%;
-  border: 0.1rem solid #2563eb;
-  margin-top: 0.5rem;
+
+  border: 0.1rem solid var(--color-button);
 }
 
-/* Year below image */
 .project-left-card .year {
   margin-top: 0.5rem;
-  font-size: 1.2rem;
-  /*color: #6b7280;*/
+  font-size: clamp(1rem, 1.2rem, 1.5rem);
 }
 
-/* Right card: description */
+/* project right */
 .project-right-card {
-  flex: 0 0 74%; /* 75% width */
+  flex: 0 0 72%;
+
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 0.5rem; /* reduced spacing */
-  /*color: #374151;*/
-  background-color: #f3f4f6; /* light gray */
+  gap: 0.5rem;
+
+  background-color: var(--color-container-inner);
+
   padding: 0.5rem;
   border-radius: 8px;
-  box-sizing: border-box;
-  overflow-wrap: break-word; /* prevent long words from overflowing */
+
+  overflow-wrap: break-word;
 }
 
 .project-right-card p {
-  margin-top: 0.1rem;
-  margin-bottom: 0rem;
-  font-size: 1rem;
+  margin: 0.1rem 0;
+  font-size: clamp(0.8rem, 1rem, 1.2rem);
 }
 
-/* responsive adjustment */
+/* responsive */
 @media (max-width: 786px) {
-  .project-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .project-header img {
-    width: 100%;
-    height: 180px;
-  }
-
   .project-content {
     flex-direction: column;
   }
@@ -356,58 +518,102 @@ nav .nav-links a.active {
     flex: 1 1 100%;
     align-items: center;
   }
+
   .project-right-card {
     text-align: center;
   }
+
+  .project-header-title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: clamp(1rem, 1.2rem, 1.4rem);
+  }
+
+  .project-left-card img {
+    width: clamp(4rem, 6rem, 8rem);
+    height: clamp(4rem, 6rem, 7rem);
+  }
+
+  .project-left-card .year {
+    font-size: clamp(0.8rem, 1rem, 1.2rem);
+  }
+
+  .project-right-card p {
+    margin: 0.1rem 0;
+    font-size: clamp(0.8rem, 1rem, 1.2rem);
+  }
 }
 
-/* ---------- Quotes ---------- */
+/* =====================================================
+   QUOTE SECTION
+===================================================== */
 .quote {
   margin-top: 3rem;
-  padding: 1rem;
-  border-left: 1.5rem solid #374151;
-  font-family: "Inter", sans-serif;
-  background-color: #ffffff;
-  border-radius: 0.5rem;
   margin-bottom: 2rem;
-  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
-  box-sizing: border-box;
 
-  /* Optional: Ensure the background doesn't overlap the left border */
-  overflow: hidden;
+  padding: 1rem;
 
-  .original {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    color: #333;
-  }
+  border-left: 1.5rem solid var(--color-dark-secondary);
+  background-color: var(--color-light);
 
-  .translation {
-    font-size: 1rem;
-    font-style: italic;
-    color: #666;
-  }
+  border-radius: 0.5rem;
+
+  font-family: "Inter", sans-serif;
+
+  box-shadow: var(--shadow-soft);
 }
 
-/* ---------- Footer ---------- */
+.quote .original {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.quote .translation {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
 footer {
-  text-align: center;
-  padding: 20px;
-  color: #6b7280;
+  align-items: center;
+  padding: 1rem;
+  color: var(--color-text-light);
   margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  display: flex;
+  justify-content: center; /* centers content horizontally */
+  align-items: center; /* centers content vertically, if needed */
+  text-align: center;
+  flex-shrink: 0;
 }
 
-/*wechat qr*/
+footer div {
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+  background-color: var(--color-nav-background);
+  font-weight: 900;
+  width: fit-content;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* =====================================================
+   WECHAT QR SECTION
+===================================================== */
 .qr-container h1 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
-  color: #16a34a;
+  color: var(--color-success);
 }
 
 .qr-container i {
   margin-right: 0.4rem;
 }
+
 .qr-container img {
   transition: transform 0.25s ease;
 }
@@ -419,8 +625,9 @@ footer {
 .back-link {
   display: inline-block;
   margin-top: 1.25rem;
+
   text-decoration: none;
-  color: #16a34a;
+  color: var(--color-success);
   font-weight: 600;
 }
 
@@ -428,6 +635,9 @@ footer {
   text-decoration: underline;
 }
 
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
 @media (max-width: 480px) {
   .qr-container {
     padding: 1.5rem;
