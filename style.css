@@ -16,15 +16,17 @@
   --color-nav-border: var(--color-image-border);
   --color-nav-text: var(--color-button);
 
-  --color-container-outer: #ffffff;
+  --color-container-outer: #faf9f6;
   --color-container-inner: #f3f4f6;
-  --color-container-outline: #e5e7eb;
+  --color-container-outline: #d1d5db;
 
   --color-text-dark: #111827;
   --color-text-muted: #6b7280;
   --color-text-light: #f9fafb;
 
-  --shadow-soft: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.05);
+  --color-footer-background: #708090;
+
+  --shadow-soft: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.1);
 }
 
 /* =====================================================
@@ -33,12 +35,7 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-  background-image: url("./images/singapore_QHD.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center 10%;
-
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
 
   margin: 0;
@@ -50,10 +47,28 @@ body {
   flex-direction: column;
 }
 
-@media (max-width: 768px) {
-  body {
-    background-attachment: scroll;
-  }
+body .background-overlay {
+  background-image: url("./images/singapore_QHD.jpg");
+  background-size: cover;
+  background-position: center 10%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.background-overlay .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 80%;
+  text-align: center;
+  flex: 1 0 0 auto;
+}
+
+.background-overlay footer {
+  flex-shrink: 0;
+}
 
 /* =====================================================
    NAVIGATION BAR
@@ -484,7 +499,7 @@ nav .nav-links a.active {
   object-fit: cover;
   border-radius: 50%;
 
-  border: 0.1rem solid var(--color-button);
+  border: 0.1rem solid var(--color-image-border);
 }
 
 .project-left-card .year {
@@ -600,7 +615,7 @@ footer div {
   text-align: center;
   display: flex;
   gap: 1rem;
-  background-color: var(--color-nav-background);
+  background-color: var(--color-footer-background);
   font-weight: 900;
   width: fit-content;
   border-radius: 0.5rem;
