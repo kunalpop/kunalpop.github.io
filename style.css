@@ -1,6 +1,5 @@
 /* =====================================================
    COLOR VARIABLES
-   Change colors here to update the entire website
 ===================================================== */
 :root {
   --color-button: white;
@@ -48,7 +47,7 @@ body {
 }
 
 body .background-overlay {
-  background-image: url("./images/singapore_QHD.jpg");
+  background-image: url("images/singapore_QHD.jpg");
   background-size: cover;
   background-position: center 10%;
   min-height: 100vh;
@@ -278,6 +277,7 @@ nav .nav-links a.active {
   margin: 2rem;
 
   box-shadow: var(--shadow-soft);
+  max-height: 100%;
 }
 
 .intro p {
@@ -286,7 +286,59 @@ nav .nav-links a.active {
   align-items: center;
   flex: 1 1 auto;
   justify-content: center;
-  font-size: clamp(1rem, 1.53rem, 1.9rem);
+  font-size: clamp(1.1rem, 1.3rem, 1.5rem);
+}
+
+.brand {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: var(--color-container-outer);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.brand-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+  will-change: transform;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+  flex-shrink: 0;
+  padding-right: 5rem;
+}
+
+.brand-group:first-child {
+  margin-right: 5rem; /* Increase this to enlarge the gap b/w groups*/
+}
+
+.brand img {
+  width: clamp(2rem, 4rem, 6rem);
+  height: clamp(2rem, 4rem, 6rem);
+  object-fit: contain;
+  border-radius: 50%;
+  border: 0.1rem solid var(--color-image-border);
+  padding: 0.3rem;
+  background: #fff;
+  display: block;
+  flex-shrink: 0;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @media (max-width: 768px) {
@@ -301,6 +353,15 @@ nav .nav-links a.active {
   .intro p {
     margin-top: 1rem;
     font-size: clamp(0.4rem, 0.805rem, 1.2rem);
+  }
+
+  .brand {
+    gap: 1rem;
+    margin: 1rem;
+  }
+
+  .brand img {
+    width: clamp(4rem, 5rem, 6rem);
   }
 }
 
@@ -493,11 +554,12 @@ nav .nav-links a.active {
 }
 
 .project-left-card img {
+  margin-top: 0.7rem;
   width: clamp(6rem, 8rem, 10rem);
   height: clamp(6rem, 8rem, 9rem);
 
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 5%;
 
   border: 0.1rem solid var(--color-image-border);
 }
@@ -593,33 +655,6 @@ nav .nav-links a.active {
 .quote .translation {
   font-size: 1rem;
   font-style: italic;
-}
-
-/* =====================================================
-   FOOTER
-===================================================== */
-footer {
-  align-items: center;
-  padding: 1rem;
-  color: var(--color-text-light);
-  margin-top: 1rem;
-  margin-bottom: 0.2rem;
-  display: flex;
-  justify-content: center; /* centers content horizontally */
-  align-items: center; /* centers content vertically, if needed */
-  text-align: center;
-  flex-shrink: 0;
-}
-
-footer div {
-  text-align: center;
-  display: flex;
-  gap: 1rem;
-  background-color: var(--color-footer-background);
-  font-weight: 900;
-  width: fit-content;
-  border-radius: 0.5rem;
-  padding: 0.25rem 0.5rem;
 }
 
 /* =====================================================

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Kunal Soni</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
     <nav>
@@ -24,14 +25,8 @@
       </div>
     </nav>
 
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
-
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("open");
-      });
-    </script>
+    <script src="js/nav.js" defer></script>
+    <script src="js/footer.js" defer></script>
 
     <div class="container">
       <div class="intro">
@@ -43,12 +38,13 @@
           HealthTech, EdTech, FinTech, and InsureTech, where I’ve led the
           end-to-end development of scalable, full-stack analytics and software
           systems in industrial health monitoring, product recommendation,
-          customer service, cross-border ecommerce, insurance, and governance.
-          Currently, I am deepening and broadening my knowledge in AI, big data
-          systems, and web3 technologies, with a strong interest in applying AI
-          to real-world business problems. I strive to transform knowledge into
-          impactful and meaningful products that address real-world problems and
-          add lasting value to society.
+          customer service capacity planning, cross-border ecommerce, insurance
+          aggregation, and government engagement. Currently, I am deepening and
+          broadening my knowledge in AI, big data systems, and web3
+          technologies, with a strong interest in applying AI to real-world
+          business problems. I strive to transform knowledge into impactful and
+          meaningful products that address real-world problems and add lasting
+          value to society.
         </p>
 
         <p>
@@ -56,18 +52,44 @@
           a diverse set of interests. I enjoy playing Cricket, swimming, and
           working out at the gym, activities that help me maintain discipline
           and fitness and keep me in shape. I am an avid reader with a strong
-          interest in science fiction and finance. I am especially drawn to the
-          ideas that explore the future, technology and ethics. I also have a
-          keen interest in quantitative finance, particularly inspired by the
-          time-tested principles of value investing. Additionally, I enjoy
-          traveling and meeting people from different cultures, learning about
-          their cuisines, traditions, and perspectives. These experiences
-          continually broaden and enrich my outlook on life. I believe in
-          working, connecting, and learning with curiosity and positivity.
+          interest in science fiction, tech, and finance. I am especially drawn
+          to the ideas that explore the future, technology, and ethics. I also
+          have a keen interest in quantitative finance and value investing.
+          Additionally, I enjoy traveling and meeting people from different
+          cultures, learning about their cuisines, traditions, and perspectives.
+          These experiences continually broaden and enrich my outlook on life. I
+          believe in working, connecting, and learning with curiosity and
+          positivity.
         </p>
       </div>
     </div>
+    <div class="brand">
+      <div class="brand-track">
+        <div class="brand-group">
+          <img src="images/logos/nus.svg" alt="NUS Logo" />
+          <img src="images/logos/iitm.svg" alt="IITM Logo" />
+          <img src="images/logos/ge.svg" alt="GE Logo" />
+          <img src="images/logos/amazon.svg" alt="Amazon Logo" />
+          <img src="images/logos/tata.svg" alt="TATA Logo" />
+          <img src="images/logos/tatrasdata.svg" alt="Tatras Data Logo" />
+          <img src="images/logos/liqvid.svg" alt="Liqvid Logo" />
+          <img src="images/logos/pristyncare.svg" alt="Pristyn Care Logo" />
+          <img src="images/logos/cardekho.svg" alt="Car Dekho Logo" />
+        </div>
 
-    <footer><div>© 2025 kunalpop</div></footer>
+        <div class="brand-group" aria-hidden="true">
+          <img src="images/logos/nus.svg" alt="" />
+          <img src="images/logos/iitm.svg" alt="" />
+          <img src="images/logos/ge.svg" alt="" />
+          <img src="images/logos/amazon.svg" alt="" />
+          <img src="images/logos/tata.svg" alt="" />
+          <img src="images/logos/tatrasdata.svg" alt="" />
+          <img src="images/logos/liqvid.svg" alt="" />
+          <img src="images/logos/pristyncare.svg" alt="" />
+          <img src="images/logos/cardekho.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div id="footer-container"></div>
   </body>
 </html>
