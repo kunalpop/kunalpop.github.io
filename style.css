@@ -294,8 +294,7 @@ nav .nav-links a.active {
   display: flex;
   align-items: center;
   background: var(--color-container-outer);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   border-radius: 0.5rem;
   margin: 2rem;
   box-shadow: var(--shadow-soft);
@@ -317,12 +316,13 @@ nav .nav-links a.active {
 }
 
 .brand-group:first-child {
-  margin-right: 5rem; /* Increase this to enlarge the gap b/w groups*/
+  margin-right: 5rem; /* Increase this to enlarge the gap b/w groups */
 }
 
 .brand img {
-  width: clamp(2rem, 4rem, 6rem);
-  height: clamp(2rem, 4rem, 6rem);
+  width: clamp(2.5rem, 4rem, 6rem);
+  height: clamp(2.5rem, 4rem, 6rem);
+  aspect-ratio: 1 / 1;
   object-fit: contain;
   border-radius: 50%;
   border: 0.1rem solid var(--color-image-border);
@@ -330,6 +330,53 @@ nav .nav-links a.active {
   background: #fff;
   display: block;
   flex-shrink: 0;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .brand {
+    margin: 1.5rem;
+    padding: 0.9rem 0;
+  }
+
+  .brand-group {
+    gap: 6rem;
+    padding-right: 3.5rem;
+  }
+
+  .brand-group:first-child {
+    margin-right: 3.5rem;
+  }
+
+  .brand img {
+    width: clamp(2.2rem, 3.4rem, 5rem);
+    height: clamp(2.2rem, 3.4rem, 5rem);
+    padding: 0.25rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .brand {
+    margin: 1rem;
+    padding: 0.75rem 0;
+    border-radius: 0.5rem;
+  }
+
+  .brand-group {
+    gap: 3.5rem;
+    padding-right: 2rem;
+  }
+
+  .brand-group:first-child {
+    margin-right: 2rem;
+  }
+
+  .brand img {
+    width: clamp(2rem, 3rem, 4rem);
+    height: clamp(2rem, 3rem, 4rem);
+    padding: 0.2rem;
+  }
 }
 
 @keyframes marquee {
@@ -453,6 +500,7 @@ nav .nav-links a.active {
   transform: translateY(-2px);
 }
 
+/* Tablet + Mobile */
 @media (max-width: 768px) {
   .container .profile h1 {
     font-size: 1.8rem;
