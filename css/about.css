@@ -71,7 +71,6 @@
 .brand-track {
   display: flex;
   width: max-content;
-  gap: 5rem; /* space between groups - increase this to enlarge the gap b/w groups */
   animation: marquee 25s linear infinite;
   will-change: transform;
 }
@@ -81,6 +80,7 @@
   align-items: center;
   gap: 9rem;
   flex-shrink: 0;
+  margin-right: 9rem; /* matches the intra-group gap so all image spacing is consistent */
 }
 
 .brand img {
@@ -103,12 +103,9 @@
     padding: 0.9rem 0;
   }
 
-  .brand-track {
-    gap: 3.5rem;
-  }
-
   .brand-group {
     gap: 6rem;
+    margin-right: 6rem;
   }
 
   .brand img {
@@ -126,12 +123,9 @@
     border-radius: 0.5rem;
   }
 
-  .brand-track {
-    gap: 2rem;
-  }
-
   .brand-group {
     gap: 3.5rem;
+    margin-right: 3.5rem;
   }
 
   .brand img {
