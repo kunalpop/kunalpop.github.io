@@ -1,0 +1,186 @@
+[
+  {
+    "title": "Gig Secure",
+    "image": "images/projects/freelance-dApp-2026.png",
+    "alt": "Gig Secure decentralized freelance platform illustration",
+    "year": "2026",
+    "categories": [
+      "Blockchain/Web3",
+      "Software Engineering"
+    ],
+    "description": "Developed Gig Secure, a decentralized freelance platform that included automated escrow-based payments, milestone tracking, dispute resolution, and reputation management using blockchain technology. Designed the application as a finite state machine to enforce valid workflow transitions, ensuring transactional integrity, automated settlements, and secure contract execution.",
+    "techLabel": "Tech:",
+    "tech": "Solidity, React.js, Ethers.js, IPFS, MetaMask, finite state machines, decentralized application (dApp), smart contracts, Ethereum (ERC-20 tokens standards), escrow mechanisms, trustless execution, on-chain reputation, cryptographic verification (AES-256 encryption), consensus mechanisms, wallet integration, automated settlement, event-driven architecture, transactional integrity, Role-Based Access Control (RBAC), UUPS Universal Upgradeable Smart Contracts, secure state transitions, full stack software engineering",
+    "managementLabel": "Management:",
+    "management": "team meetings, presentation, documentation, project management"
+  },
+  {
+    "title": "Extractive Question Answering",
+    "image": "images/projects/extractive-question-answering-2025.png",
+    "alt": "Extractive Question Answering AI illustration",
+    "year": "2025",
+    "categories": [
+      "Artificial Intelligence and Machine Learning",
+      "Software Engineering"
+    ],
+    "description": "Fine-tuned BERT and ALBERT with span-labelling heads to build an extractive question answering system that extracts answers as a contiguous span of text from a passage, achieving benchmark-level F1 and Exact Match (EM) performance, validating the effectiveness of transformer-based models for extractive question answering. Applications include customer service, knowledge management, legal and financial information extraction, and public information systems.",
+    "techLabel": "Tech:",
+    "tech": "Python (PyTorch), data cleaning, fine-tuning, transfer learning, sliding windows, joint probability inference, span labelling, BERT, ALBERT, hyper-parameter tuning, F1 Score, Exact Match",
+    "managementLabel": "Management:",
+    "management": "team meetings, presentation, documentation"
+  },
+  {
+    "title": "Generative AI Training App to Train Nurses in English",
+    "image": "images/projects/genai-nurses-2024.png",
+    "alt": "Generative AI nurse English training app illustration",
+    "year": "2024",
+    "categories": [
+      "Artificial Intelligence and Machine Learning",
+      "Software Engineering"
+    ],
+    "description": "Developed a Generative AI–powered mobile application to train nurses for Occupational English Test (OET) preparation. It consisted of a RAG-based chatbot to help nurses prepare for the test by comparing their responses to questions with AI-based responses to same questions, improving self-assessment and training efficiency.",
+    "techLabel": "Tech:",
+    "tech": "LlamaIndex, RAG, VectorDB, React Native, Express.js, Python, MongoDB, FastAPI, Microsoft Azure, full stack software engineering",
+    "managementLabel": "Management:",
+    "management": "project management, vendor management, software requirements specifications"
+  },
+  {
+    "title": "Children's Quizzing Website For Government of India",
+    "image": "images/projects/children-quiz-2024.png",
+    "alt": "Children's quizzing website illustration",
+    "year": "2024",
+    "categories": [
+      "Software Engineering"
+    ],
+    "description": "Designed, developed, and managed two frontends and a backend for a children's quizzing website for MyGov.in, aimed at improving the government's digital engagement with children.",
+    "techLabel": "Tech:",
+    "tech": "ReactJs, NestJS, PostgreSQL, Redis, Docker, Grafana, Microsoft Azure, software architecture, database design, microservices",
+    "managementLabel": "Management:",
+    "management": "Scrum, JIRA, project management, client meetings, software requirements specifications"
+  },
+  {
+    "title": "Motor and Health Insurance Renewal Backend",
+    "image": "images/projects/insurance-renewal-2023.png",
+    "alt": "Motor and health insurance renewal backend illustration",
+    "year": "2023",
+    "categories": [
+      "Software Engineering"
+    ],
+    "description": "Built a scalable backend system for motor and health insurance renewals for an insurance aggregator, enabling seamless policy renewals, validations, and integrations with external partners.",
+    "techLabel": "Tech:",
+    "tech": "NestJS, PostgreSQL, MongoDB, Amazon Web Services, microservices, RabbitMQ",
+    "managementLabel": "Management:",
+    "management": "Scrum, JIRA, project management, client meetings"
+  },
+  {
+    "title": "Automated Operation Theatre Scheduler",
+    "image": "images/projects/ot-scheduler-2022.png",
+    "alt": "Automated hospital operation theatre scheduling system illustration",
+    "year": "2022",
+    "categories": [
+      "Operations Research",
+      "Software Engineering"
+    ],
+    "description": "Engineered an automated scheduling system that computes optimal surgeon travel routes and heuristically allocates operation theatre slots, eliminating double-bookings and absorbing minor time delays. Enabled one-click schedule generation and dynamic rescheduling, automatically recalculating slot assignments and theater allocations in response to delays, cancellations, or emergency cases.",
+    "techLabel": "Tech:",
+    "tech": "Python, data cleaning, vehicle routing (TSP-Dijkstra’s Algorithm), geocoding, Open Source Routing Machine, heuristic, MongoDB, Django",
+    "managementLabel": null,
+    "management": null
+  },
+  {
+    "title": "Financial Insight",
+    "image": "images/projects/stock-price-prediction-2021.png",
+    "alt": "Financial Insight AI-powered investment platform illustration",
+    "year": "2021",
+    "categories": [
+      "Artificial Intelligence and Machine Learning",
+      "Finance",
+      "Software Engineering"
+    ],
+    "description": "Developed Financial Insight that is an AI-powered investment platform that combines fundamental financial analysis with AI insights of annual reports to deliver transparent, explainable stock recommendations. It integrates fundamental analysis, quantitative finance, and qualitative business insights, helping equity investors evaluate financial health, growth potential, and valuation faster while reducing manual research and enabling informed, data-driven investment decisions with greater efficiency, accuracy, confidence, and consistency.",
+    "techLabel": "Tech:",
+    "tech": "fundamental analysis, quantitative finance, generative AI, natural language processing, financial modeling, React, FastAPI, statistical modelling, and financial accounting, software engineering, information fusion, data engineering, data analysis, full stack software engineering",
+    "managementLabel": "Management:",
+    "management": "Software design and architecture, software requirements specifications, and project management."
+  },
+  {
+    "title": "Worldwide Capacity Planning",
+    "image": "images/projects/wwcp-2018.png",
+    "alt": "Worldwide capacity planning forecasting system illustration",
+    "year": "2018",
+    "categories": [
+      "Operations Research",
+      "Statistics",
+      "Software Engineering"
+    ],
+    "description": "Designed and built a worldwide automated contacts forecasting system, streamlining, standardizing, and scaling the worldwide Customer Service supply chain demand forecasting. The software enabled Amazon Devices expansion into 15+ countries, generating billions in incremental revenue and cutting millions of dollars in annual operational costs, and was designed to seamlessly scale across any number of devices, geographies, and business units while following Lean principles.",
+    "techLabel": "Tech:",
+    "tech": "R, SQL, Amazon Web Services, exploratory data analysis, data preprocessing, data engineering, analytical methods, statistical methods, and predictive analytics",
+    "managementLabel": "Management:",
+    "management": "software design and architecture, software requirements specifications, stakeholder management, project management, technical leadership, and product management"
+  },
+  {
+    "title": "Apparel Recommendation System",
+    "image": "images/projects/apparel-recommender-2016.png",
+    "alt": "Apparel recommendation system illustration",
+    "year": "2016",
+    "categories": [
+      "Artificial Intelligence and Machine Learning",
+      "Statistics",
+      "Software Engineering"
+    ],
+    "description": "Built a hybrid recommendation system combining content-filtering and collaborative-filtering techniques to deliver personalized apparel recommendations, improving relevance, customer engagement, and sales. Incorporated time-decay weighting to prioritize users' recent interactions, enabling the model to adapt to evolving preferences and seasonal shopping trends.",
+    "techLabel": "Tech:",
+    "tech": "R, exploratory data analysis, data preprocessing, feature engineering, content filtering, collaborative filtering, hierarchical clustering, CART, random forest, time weighting, SQL, Flask",
+    "managementLabel": null,
+    "management": null
+  },
+  {
+    "title": "Gas Turbine Trip Prediction",
+    "image": "images/projects/turbune-analytics-2014.png",
+    "alt": "Gas turbine trip prediction system illustration",
+    "year": "2014",
+    "categories": [
+      "Artificial Intelligence and Machine Learning",
+      "Statistics",
+      "Engineering"
+    ],
+    "description": "Built a predictive analytics model to anticipate valve trip events in gas turbines using machine learning and deep learning, enabling proactive maintenance and reducing unplanned downtime, and thus preventing critical damage to turbines. Engineered time-series features from sensor data, evaluated multiple classification models, and optimized performance through hyperparameter tuning and cross-validation.",
+    "techLabel": "Tech:",
+    "tech": "Python, SQL, exploratory data analysis, data preprocessing, machine learning, deep learning, data engineering, feature engineering, information fusion",
+    "managementLabel": null,
+    "management": null
+  },
+  {
+    "title": "Six Sigma Quality Refrigerator Compressor",
+    "image": "images/projects/six-sigma-compressor-2013.png",
+    "alt": "Refrigerator compressor design illustration",
+    "year": "2013",
+    "categories": [
+      "Engineering",
+      "Operations Research",
+      "Statistics"
+    ],
+    "description": "Designed a refrigerator compressor prototype with energy efficiency ratio, cooling capacity per unit power consumption, above industry benchmarks and probabilistic fatigue life of components exceeding 20 years. Since a compressor accounts for about 90% of a refrigerator’s energy consumption, the design was projected to significantly lower the electricity costs for millions of households across North America.",
+    "techLabel": "Tech:",
+    "tech": "Design For Six Sigma, reliability engineering, engineering design, system dynamics simulation, rig testing, computer simulation, Computer-Aided Design",
+    "managementLabel": null,
+    "management": null
+  },
+  {
+    "title": "Asset Portfolio Risk Assessment",
+    "image": "images/projects/asset-portfolio-risk-assessment-2012.png",
+    "alt": "Asset portfolio risk assessment illustration",
+    "year": "2012",
+    "categories": [
+      "Finance",
+      "Operations Research",
+      "Statistics"
+    ],
+    "description": "Quantified capital asset portfolio risk by estimating return statistics and modeling joint tail dependencies with copulas; generated thousands of market scenarios through Monte Carlo simulations to compute volatility, value at risk (VaR), and conditional value at risk (CVaR); evaluated portfolio resilience under adverse conditions using stress testing; performed sensitivity analyses to assess how asset allocation shifts impacted overall risk.",
+    "techLabel": "Tech Competencies:",
+    "tech": "Uncertainity Quantification, Portfolio Risk Assessment, Portfolio Management, Statistical Modeling, Copula Functions, Monte Carlo Simulation, Sensitivity Analysis",
+    "managementLabel": null,
+    "management": null
+  }
+]
