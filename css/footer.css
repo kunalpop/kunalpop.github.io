@@ -52,8 +52,7 @@ footer {
 
   padding: 1rem; /* prevents modal touching screen edges */
 
-  background: var(--color-container-outer);
-  /*background: rgba(0, 0, 0, 0.55);*/
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .modal-content {

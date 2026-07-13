@@ -76,9 +76,9 @@ function renderCategoryFilter(selected) {
   return `
     <div class="category-filter">
       <label for="category-select">Select Category:</label>
-      <select id="category-select">
-        ${options}
-      </select>
+        <select id="category-select">
+          ${options}
+        </select>
     </div>
   `;
 }

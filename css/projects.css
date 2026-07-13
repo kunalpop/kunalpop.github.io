@@ -33,16 +33,18 @@
 ===================================================== */
 .category-filter {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
   gap: 0.75rem;
-  margin: 0 2rem 1rem;
-  font-size: 1rem;
+  width: 50%;
+  align-self: center;
 }
 
 .category-filter label {
   color: var(--color-text-muted);
   font-weight: 600;
+  white-space: nowrap;
+  align-self: center;
 }
 
 .category-filter select {
@@ -52,8 +54,21 @@
   background: var(--color-container-inner);
   font-size: 1rem;
   cursor: pointer;
+  flex: 1;
 }
 
+/* Mobile view: stack label and select vertically */
+@media (max-width: 768px) {
+  .category-filter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .category-filter select {
+    width: 100%;
+  }
+}
 /* =====================================================
    PROJECT CARD
 ===================================================== */
