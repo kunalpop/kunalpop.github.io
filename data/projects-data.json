@@ -6,13 +6,14 @@
     "year": "2026",
     "categories": [
       "Blockchain/Web3",
-      "Software Engineering"
+      "Software Engineering",
+      "Operations Research"
     ],
-    "description": "Developed Gig Secure, a decentralized freelance platform that included automated escrow-based payments, milestone tracking, dispute resolution, and reputation management using blockchain technology. Designed the application as a finite state machine to enforce valid workflow transitions, ensuring transactional integrity, automated settlements, and secure contract execution.",
-    "techLabel": "Tech:",
-    "tech": "Solidity, React.js, Ethers.js, IPFS, MetaMask, finite state machines, decentralized application (dApp), smart contracts, Ethereum (ERC-20 tokens standards), escrow mechanisms, trustless execution, on-chain reputation, cryptographic verification (AES-256 encryption), consensus mechanisms, wallet integration, automated settlement, event-driven architecture, transactional integrity, Role-Based Access Control (RBAC), UUPS Universal Upgradeable Smart Contracts, secure state transitions, full stack software engineering",
-    "managementLabel": "Management:",
-    "management": "team meetings, presentation, documentation, project management"
+    "description": "Developed Gig Secure, a decentralized freelancing platform that implements escrow-based payments, milestone tracking, dispute resolution, and reputation management. Architected the smart contracts as a Finite State Machine (FSM) to enforce valid workflow transitions, guaranteeing transactional integrity, automated settlements, and tamper-proof contract execution.",
+    "techLabel": "Tech Skills:",
+    "tech": "Blockchain, Decentralized Application, Finite State Machines, Smart Contracts, Ethereum (ERC-20 Tokens Standard), Cryptographic Verification (AES-256 Encryption), Consensus Mechanism, Metamask Wallet Integration, Role-Based Access Control (RBAC), Universal Upgradeable Proxy Standard (UUPS), React, Solidity, IPFS",
+    "managementLabel": "Management Competencies:",
+    "management": "Presentation, Documentation, Project Management, Freelancing Business Case Analysis"
   },
   {
     "title": "Extractive Question Answering",
@@ -21,13 +22,13 @@
     "year": "2025",
     "categories": [
       "Artificial Intelligence and Machine Learning",
-      "Software Engineering"
+      "Statistics"
     ],
     "description": "Fine-tuned BERT and ALBERT with span-labelling heads to build an extractive question answering system that extracts answers as a contiguous span of text from a passage, achieving benchmark-level F1 and Exact Match (EM) performance, validating the effectiveness of transformer-based models for extractive question answering. Applications include customer service, knowledge management, legal and financial information extraction, and public information systems.",
-    "techLabel": "Tech:",
-    "tech": "Python (PyTorch), data cleaning, fine-tuning, transfer learning, sliding windows, joint probability inference, span labelling, BERT, ALBERT, hyper-parameter tuning, F1 Score, Exact Match",
-    "managementLabel": "Management:",
-    "management": "team meetings, presentation, documentation"
+    "techLabel": "Tech Skills:",
+    "tech": "Span Labelling, Transfer Learning (Transformer Fine-Tuning), Sliding Windows, Joint Probability Inferencing, BERT, ALBERT, Hyperparameter Tuning",
+    "managementLabel": "Management Competencies:",
+    "management": "Presentation, Documentation, Project Management"
   },
   {
     "title": "Generative AI Training App to Train Nurses in English",
@@ -39,53 +40,46 @@
       "Software Engineering"
     ],
     "description": "Developed a Generative AI–powered mobile application to train nurses for Occupational English Test (OET) preparation. It consisted of a RAG-based chatbot to help nurses prepare for the test by comparing their responses to questions with AI-based responses to same questions, improving self-assessment and training efficiency.",
-    "techLabel": "Tech:",
-    "tech": "LlamaIndex, RAG, VectorDB, React Native, Express.js, Python, MongoDB, FastAPI, Microsoft Azure, full stack software engineering",
-    "managementLabel": "Management:",
-    "management": "project management, vendor management, software requirements specifications"
+    "techLabel": "Tech Skills:",
+    "tech": "Software Engineering, RAG, VectorDB, React Native, Express.js, MongoDB, FastAPI, Microsoft Azure",
+    "managementLabel": "Management Competencies:",
+    "management": "Software Design and Architecture, Project Management, Vendor Management, Software Requirements Specifications, Technical Documentation"
   },
   {
     "title": "Children's Quizzing Website For Government of India",
     "image": "images/projects/children-quiz-2024.png",
     "alt": "Children's quizzing website illustration",
     "year": "2024",
-    "categories": [
-      "Software Engineering"
-    ],
-    "description": "Designed, developed, and managed two frontends and a backend for a children's quizzing website for MyGov.in, aimed at improving the government's digital engagement with children.",
-    "techLabel": "Tech:",
+    "categories": ["Software Engineering"],
+    "description": "Designed and built a worldwide automated contacts forecasting system, streamlining, standardizing, and scaling the worldwide Customer Service supply chain demand forecasting. The system, which automated baseline forecasting and demand allocation, enabled Amazon Devices and Digital portfolio expansion into 15+ countries, adding billions in incremental revenue and cutting millions in annual operational costs. Built on Lean principles, the system could seamlessly scale to any number of new devices, geographies, and business units.",
+    "techLabel": "Tech Skills:",
     "tech": "ReactJs, NestJS, PostgreSQL, Redis, Docker, Grafana, Microsoft Azure, software architecture, database design, microservices",
-    "managementLabel": "Management:",
-    "management": "Scrum, JIRA, project management, client meetings, software requirements specifications"
+    "managementLabel": "Management Competencies:",
+    "management": "Scrum, JIRA, Project Management, Client Relations, Software Requirements Specifications"
   },
   {
     "title": "Motor and Health Insurance Renewal Backend",
     "image": "images/projects/insurance-renewal-2023.png",
     "alt": "Motor and health insurance renewal backend illustration",
     "year": "2023",
-    "categories": [
-      "Software Engineering"
-    ],
-    "description": "Built a scalable backend system for motor and health insurance renewals for an insurance aggregator, enabling seamless policy renewals, validations, and integrations with external partners.",
-    "techLabel": "Tech:",
-    "tech": "NestJS, PostgreSQL, MongoDB, Amazon Web Services, microservices, RabbitMQ",
-    "managementLabel": "Management:",
-    "management": "Scrum, JIRA, project management, client meetings"
+    "categories": ["Software Engineering"],
+    "description": "Built a scalable backend system for motor and health insurance renewals for an insurance aggregator, enabling smooth policy renewals, validations, and integrations with external partners.",
+    "techLabel": "Tech Skills:",
+    "tech": "NestJS, PostgreSQL, MongoDB, Amazon Web Services, Microservices, RabbitMQ",
+    "managementLabel": "Management Competencies:",
+    "management": "Scrum, JIRA, Project Management, Client Relations, Software Requirements Specifications"
   },
   {
-    "title": "Automated Operation Theatre Scheduler",
+    "title": "Operation Theatre Scheduler",
     "image": "images/projects/ot-scheduler-2022.png",
     "alt": "Automated hospital operation theatre scheduling system illustration",
     "year": "2022",
-    "categories": [
-      "Operations Research",
-      "Software Engineering"
-    ],
+    "categories": ["Operations Research", "Software Engineering"],
     "description": "Engineered an automated scheduling system that computes optimal surgeon travel routes and heuristically allocates operation theatre slots, eliminating double-bookings and absorbing minor time delays. Enabled one-click schedule generation and dynamic rescheduling, automatically recalculating slot assignments and theater allocations in response to delays, cancellations, or emergency cases.",
-    "techLabel": "Tech:",
-    "tech": "Python, data cleaning, vehicle routing (TSP-Dijkstra’s Algorithm), geocoding, Open Source Routing Machine, heuristic, MongoDB, Django",
-    "managementLabel": null,
-    "management": null
+    "techLabel": "Tech Skills:",
+    "tech": "Vehicle Routing (TSP-Dijkstra’s Algorithm), Heuristics, Assignment Problem, Geocoding, Python, Data Cleaning, Open Source Routing Machine, Google OR Tools, MongoDB, Django",
+    "managementLabel": "Management Competencies:",
+    "management": "Operational Planning, Stakeholder Management, Project Management, Technical Leadership"
   },
   {
     "title": "Financial Insight",
@@ -93,31 +87,27 @@
     "alt": "Financial Insight AI-powered investment platform illustration",
     "year": "2021",
     "categories": [
-      "Artificial Intelligence and Machine Learning",
       "Finance",
+      "Artificial Intelligence and Machine Learning",
       "Software Engineering"
     ],
-    "description": "Developed Financial Insight that is an AI-powered investment platform that combines fundamental financial analysis with AI insights of annual reports to deliver transparent, explainable stock recommendations. It integrates fundamental analysis, quantitative finance, and qualitative business insights, helping equity investors evaluate financial health, growth potential, and valuation faster while reducing manual research and enabling informed, data-driven investment decisions with greater efficiency, accuracy, confidence, and consistency.",
-    "techLabel": "Tech:",
-    "tech": "fundamental analysis, quantitative finance, generative AI, natural language processing, financial modeling, React, FastAPI, statistical modelling, and financial accounting, software engineering, information fusion, data engineering, data analysis, full stack software engineering",
-    "managementLabel": "Management:",
-    "management": "Software design and architecture, software requirements specifications, and project management."
+    "description": "Developed Financial Insight, an AI-powered investment platform that combines fundamental analysis with Generative AI insights from annual reports to deliver transparent, explainable stock recommendations. Integrating the elements of fundamental analysis, quantitative finance, and qualitative business insights, the platform helps equity investors evaluate financial health, growth prospects, and future valuation with greater efficiency, efficacy, confidence, and consistency while reducing substantial manual effort.",
+    "techLabel": "Tech Skills:",
+    "tech": "Fundamental Analysis, Quantitative Finance, Generative AI, Financial Accounting, Statistics, Software Engineering, Information Fusion, Data Engineering, Data Analysis, Data Cleaning, React, FastAPI, Python",
+    "managementLabel": "Management Competencies:",
+    "management": "Software Design and Architecture, Software Requirements Specifications, Technical Documentation, Project Management."
   },
   {
     "title": "Worldwide Capacity Planning",
     "image": "images/projects/wwcp-2018.png",
     "alt": "Worldwide capacity planning forecasting system illustration",
     "year": "2018",
-    "categories": [
-      "Operations Research",
-      "Statistics",
-      "Software Engineering"
-    ],
-    "description": "Designed and built a worldwide automated contacts forecasting system, streamlining, standardizing, and scaling the worldwide Customer Service supply chain demand forecasting. The software enabled Amazon Devices expansion into 15+ countries, generating billions in incremental revenue and cutting millions of dollars in annual operational costs, and was designed to seamlessly scale across any number of devices, geographies, and business units while following Lean principles.",
-    "techLabel": "Tech:",
-    "tech": "R, SQL, Amazon Web Services, exploratory data analysis, data preprocessing, data engineering, analytical methods, statistical methods, and predictive analytics",
-    "managementLabel": "Management:",
-    "management": "software design and architecture, software requirements specifications, stakeholder management, project management, technical leadership, and product management"
+    "categories": ["Operations Research", "Statistics", "Software Engineering"],
+    "description": "Designed and built a worldwide automated contacts forecasting system, streamlining, standardizing, and scaling the worldwide Customer Service supply chain demand forecasting. The system, which automated demand forecasting and demand allocation, enabled Amazon Devices and Digital portfolio expansion into 15+ countries, adding billions in incremental revenue and cutting millions in annual operational costs. Built on Lean principles, the system could seamlessly scale to virtually any number of new devices, geographies, and business units.",
+    "techLabel": "Tech Skills:",
+    "tech": "Forecasting, Capacity Planning, Queueing Theory, Stochastic Modelling, Statistics, Amazon Web Services, Exploratory Data Analysis, Data Preprocessing, Data Engineering, Analytical Methods, and Predictive Analytics",
+    "managementLabel": "Management Competencies:",
+    "management": "Stategic Planning, Financial Planning, Operational Planning, Software Design and Architecture, Software Requirements Specifications, Technical Documentation, Stakeholder Management, Project Management, Technical Leadership, and Product Management"
   },
   {
     "title": "Apparel Recommendation System",
@@ -129,11 +119,11 @@
       "Statistics",
       "Software Engineering"
     ],
-    "description": "Built a hybrid recommendation system combining content-filtering and collaborative-filtering techniques to deliver personalized apparel recommendations, improving relevance, customer engagement, and sales. Incorporated time-decay weighting to prioritize users' recent interactions, enabling the model to adapt to evolving preferences and seasonal shopping trends.",
-    "techLabel": "Tech:",
-    "tech": "R, exploratory data analysis, data preprocessing, feature engineering, content filtering, collaborative filtering, hierarchical clustering, CART, random forest, time weighting, SQL, Flask",
-    "managementLabel": null,
-    "management": null
+    "description": "Built a hybrid recommendation system combining content-filtering and collaborative-filtering techniques to deliver personalized apparel recommendations, improving relevance, customer engagement, and sales. Incorported recency to prioritize users' recent interactions, enabling the model to adapt to evolving preferences and seasonal shopping trends.",
+    "techLabel": "Tech Skills:",
+    "tech": "Recommender Systems, Growth Hacking, Revenue Management, Exploratory Data Analysis, Data Preprocessing, Feature Engineering, Content Filtering, Collaborative Filtering, Hierarchical Clustering, CART, Random Forest, Time Weighting, R, SQL",
+    "managementLabel": "Management Competencies:",
+    "management": "Cross Functional Collaboration, Stakeholder Management, Communciation, Technical Leadership"
   },
   {
     "title": "Gas Turbine Trip Prediction",
@@ -146,41 +136,33 @@
       "Engineering"
     ],
     "description": "Built a predictive analytics model to anticipate valve trip events in gas turbines using machine learning and deep learning, enabling proactive maintenance and reducing unplanned downtime, and thus preventing critical damage to turbines. Engineered time-series features from sensor data, evaluated multiple classification models, and optimized performance through hyperparameter tuning and cross-validation.",
-    "techLabel": "Tech:",
-    "tech": "Python, SQL, exploratory data analysis, data preprocessing, machine learning, deep learning, data engineering, feature engineering, information fusion",
-    "managementLabel": null,
-    "management": null
+    "techLabel": "Tech Skills:",
+    "tech": "Predictive Maintenance, Exploratory Data Analysis, Data Preprocessing, Machine Learning, Deep Learning, Data Engineering, Feature Engineering, Information Fusion",
+    "managementLabel": "Management Competencies:",
+    "management": "Cross Functional Collaboration, Stakeholder Management, Communciation"
   },
   {
     "title": "Six Sigma Quality Refrigerator Compressor",
     "image": "images/projects/six-sigma-compressor-2013.png",
     "alt": "Refrigerator compressor design illustration",
     "year": "2013",
-    "categories": [
-      "Engineering",
-      "Operations Research",
-      "Statistics"
-    ],
-    "description": "Designed a refrigerator compressor prototype with energy efficiency ratio, cooling capacity per unit power consumption, above industry benchmarks and probabilistic fatigue life of components exceeding 20 years. Since a compressor accounts for about 90% of a refrigerator’s energy consumption, the design was projected to significantly lower the electricity costs for millions of households across North America.",
-    "techLabel": "Tech:",
-    "tech": "Design For Six Sigma, reliability engineering, engineering design, system dynamics simulation, rig testing, computer simulation, Computer-Aided Design",
-    "managementLabel": null,
-    "management": null
+    "categories": ["Engineering", "Statistics"],
+    "description": "Designed a refrigerator compressor prototype with energy efficiency ratio - cooling capacity per unit power consumption - above industry benchmarks and probabilistic fatigue life of components exceeding 20 years. Since a compressor accounts for about 90% of a refrigerator’s energy consumption, the design was projected to significantly lower the electricity costs for millions of households across North America.",
+    "techLabel": "Tech Skills:",
+    "tech": "Design For Six Sigma, Statistics, Reliability Engineering, Engineering Design, System Dynamics Modelling, Rig Testing, Computer Simulation, Computer-Aided Design",
+    "managementLabel": "Management Competencies:",
+    "management": "Cross Functional Collaboration, Stakeholder Management, Communciation"
   },
   {
-    "title": "Asset Portfolio Risk Assessment",
+    "title": "Capital Asset Portfolio Risk Modelling",
     "image": "images/projects/asset-portfolio-risk-assessment-2012.png",
     "alt": "Asset portfolio risk assessment illustration",
     "year": "2012",
-    "categories": [
-      "Finance",
-      "Operations Research",
-      "Statistics"
-    ],
-    "description": "Quantified capital asset portfolio risk by estimating return statistics and modeling joint tail dependencies with copulas; generated thousands of market scenarios through Monte Carlo simulations to compute volatility, value at risk (VaR), and conditional value at risk (CVaR); evaluated portfolio resilience under adverse conditions using stress testing; performed sensitivity analyses to assess how asset allocation shifts impacted overall risk.",
-    "techLabel": "Tech Competencies:",
-    "tech": "Uncertainity Quantification, Portfolio Risk Assessment, Portfolio Management, Statistical Modeling, Copula Functions, Monte Carlo Simulation, Sensitivity Analysis",
-    "managementLabel": null,
-    "management": null
+    "categories": ["Finance", "Statistics"],
+    "description": "Fitted marginal distributions of capital asset returns from empirical data and combined them into a joint distribution using a copula-based dependence structure to capture tail co-movement across assets. Ran Monte Carlo simulations on the joint distribution to generate thousands of market scenarios and computed Value at Risk (VaR) and Conditional Value at Risk (CVaR) from the resulting portfolio loss distribution. Further evaluated portfolio resilience under adverse conditions through stress testing, and conducted sensitivity analyses to assess how shifts in asset allocation affected overall risk.",
+    "techLabel": "Tech Skills:",
+    "tech": "Uncertainity Modelling, Capital Asset Portfolio Risk Management, Statistical Modeling, Monte Carlo Simulation, Stress Testing, Sensitivity Analysis",
+    "managementLabel": "Management Competencies:",
+    "management": "Analytical Thinking, Communciation, Collaborative Problem Solving"
   }
 ]
