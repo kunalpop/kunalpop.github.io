@@ -53,9 +53,9 @@
     "categories": ["Software Engineering"],
     "description": "Designed and built a worldwide automated contacts forecasting system, streamlining, standardizing, and scaling the worldwide Customer Service supply chain demand forecasting. The system, which automated baseline forecasting and demand allocation, enabled Amazon Devices and Digital portfolio expansion into 15+ countries, adding billions in incremental revenue and cutting millions in annual operational costs. Built on Lean principles, the system could seamlessly scale to any number of new devices, geographies, and business units.",
     "techLabel": "Technical Skills:",
-    "tech": "ReactJs, NestJS, PostgreSQL, Redis, Docker, Grafana, Microsoft Azure, software architecture, database design, microservices",
+    "tech": "ReactJs, NestJS, PostgreSQL, Redis, Docker, Grafana, Microsoft Azure, Database Design, Microservices",
     "managementLabel": "Management Competencies:",
-    "management": "Scrum, JIRA, Project Management, Client Relations, Software Requirements Specifications"
+    "management": "Scrum, JIRA, Project Management, Client Relations, Software Requirements Specifications, Software Design and Architecture"
   },
   {
     "title": "Motor and Health Insurance Renewal Backend",
@@ -109,7 +109,7 @@
     ],
     "description": "Designed and built a worldwide automated contacts forecasting system, streamlining, standardizing, and scaling the worldwide Customer Service supply chain demand forecasting. The system, which automated the demand forecasting and the demand allocation, enabled Amazon Devices and Digital portfolio expansion into 15+ countries, adding billions in incremental revenue and cutting millions in annual operational costs. Built on Lean principles, the system could seamlessly scale to virtually any number of new devices, geographies, and business units.",
     "techLabel": "Technical Skills:",
-    "tech": "Forecasting, Capacity Planning, Queueing Theory, Stochastic Modelling, Statistics, Amazon Web Services, Exploratory Data Analysis, Data Preprocessing, Data Engineering, Analytical Methods, and Predictive Analytics",
+    "tech": "Forecasting, Capacity Planning, Queueing Theory, Stochastic Modelling, Statistics, Amazon Web Services, Exploratory Data Analysis, Data Preprocessing, Data Engineering, Analytical Methods, Predictive Analytics",
     "managementLabel": "Management Competencies:",
     "management": "Strategic Planning, Financial Planning, Operational Planning, Software Design and Architecture, Software Requirements Specifications, Technical Documentation, Stakeholder Management, Project Management, Technical Leadership, and Product Management"
   },
