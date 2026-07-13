@@ -5,7 +5,7 @@ const projectsDataUrl = new URL(
 
 const ALL_CATEGORIES = [
   "Software Engineering",
-  "Blockchain/Web3",
+  "Blockchain and Web3 Technologies",
   "Finance",
   "Artificial Intelligence and Machine Learning",
   "Operations Research",
