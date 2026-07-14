@@ -25,6 +25,8 @@ footer {
   border-radius: 999px;
 
   box-shadow: var(--shadow-soft);
+
+  font-size: 0.9rem;
 }
 
 .footer-content a {
@@ -109,6 +111,10 @@ footer {
 /* Responsive */
 
 @media (max-width: 768px) {
+  footer {
+    padding: 0.6rem;
+  }
+
   .footer-content {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -120,6 +126,7 @@ footer {
 
     text-align: center;
     white-space: nowrap;
+    font-size: 0.45rem;
   }
 
   .modal {
@@ -129,9 +136,9 @@ footer {
 
   .modal-content {
     width: 100%;
-    max-width: 360px;
-    max-height: 80vh;
-    padding: 1.5rem;
+    max-width: 300px;
+    max-height: 70vh;
+    padding: 1rem;
     border-radius: 10px;
   }
 
@@ -139,5 +146,18 @@ footer {
     top: 0.6rem;
     right: 0.8rem;
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 420px) {
+  footer {
+    padding: 0.5rem;
+  }
+
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.7rem 0.9rem;
+    white-space: normal;
   }
 }
