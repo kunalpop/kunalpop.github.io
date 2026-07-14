@@ -117,7 +117,7 @@
   .container {
     margin: 6rem auto 0.5rem;
     padding: 0 1rem;
-    min-width: 80%;
+    min-width: 85%;
     max-width: 89%;
   }
 
@@ -134,7 +134,7 @@
 
   .intro p {
     margin-top: 0;
-    font-size: clamp(0.8rem, 0.9rem, 1rem);
+    font-size: clamp(0.6rem, 0.799rem, 0.8rem);
   }
 
   .brand {
