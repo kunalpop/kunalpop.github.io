@@ -24,7 +24,7 @@ function renderProject(project) {
     project.management && project.managementLabel
       ? `<p>
             <strong>${project.managementLabel}</strong>
-            ${project.management}
+            ${project.management.join(", ")}
           </p>`
       : "";
 
@@ -56,7 +56,7 @@ function renderProject(project) {
           </p>
           <p>
             <strong>${project.techLabel}</strong>
-            ${project.tech}
+            ${project.tech.join(", ")}
           </p>
           ${managementBlock}
         </div>
