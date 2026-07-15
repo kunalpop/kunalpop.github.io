@@ -93,15 +93,6 @@
   flex-shrink: 0;
 }
 
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
 /* =====================================================
    Responsive Design Breakpoints
 ===================================================== */
@@ -324,3 +315,12 @@
     padding: 0.13rem;
   }
 }*/
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
