@@ -1,0 +1,8 @@
+Desktop -> 1440px <
+Small Desktop -> 1280px
+Tablet -> 1024px
+Small Tablet -> 900px
+Large Phone -> 768px
+Phone -> 480px
+Small Phone -> 380px
+Smallest Phone -> 340px

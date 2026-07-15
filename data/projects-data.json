@@ -9,7 +9,7 @@
       "Software Engineering",
       "Operations Research"
     ],
-    "description": "Developed Gig Secure, a decentralized freelancing platform that implements escrow-based payments, milestone tracking, dispute resolution, and reputation management. Architected the smart contracts as a Finite State Machine to enforce valid workflow transitions, guaranteeing transactional integrity, automated settlements, and tamper-proof contract execution.",
+    "description": "Developed Gig Secure, a decentralized freelancing platform that implements escrow-based payments, milestone tracking, dispute resolution, and reputation management. Architected the smart contracts as a finite state machine to enforce valid workflow transitions, guaranteeing transactional integrity, automated settlements, and tamper-proof contract execution. The interaction between clients and freelancers was modelled as a strategic game.",
     "techLabel": "Technical Skills:",
     "tech": [
       "Blockchain",
@@ -213,7 +213,7 @@
       "Statistics",
       "Artificial Intelligence and Machine Learning"
     ],
-    "description": "Designed and built a worldwide automated contacts forecasting system, streamlining, standardizing, and scaling the Worldwide Customer Service supply chain demand forecasting. The system, which automated the demand forecasting and the demand allocation, enabled Amazon Devices and Digital Services portfolio expansion into 15+ countries, adding billions in incremental revenue and cutting millions in annual operational costs. Built on Lean principles, the system could seamlessly scale to virtually any number of new devices, geographies, and business units.",
+    "description": "Designed and built a worldwide contacts forecasting system, streamlining, standardizing, and scaling the Worldwide Customer Service supply chain demand forecasting. The system, which automated the demand forecasting and the demand allocation, enabled Amazon Devices and Digital Services portfolio expansion into 15+ countries, adding billion(s) in incremental revenue and cutting million(s) in annual operational costs. Built on Lean principles, the system could seamlessly scale to virtually any number of new devices, geographies, and business units.",
     "techLabel": "Technical Skills:",
     "tech": [
       "Forecasting",

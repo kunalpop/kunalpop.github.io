@@ -93,68 +93,6 @@
   flex-shrink: 0;
 }
 
-/* Tablet */
-@media (max-width: 1024px) {
-  .brand {
-    margin: 1.5rem;
-    padding: 0.9rem 0;
-  }
-
-  .brand-group {
-    gap: 6rem;
-    margin-right: 6rem;
-  }
-
-  .brand img {
-    width: clamp(2.2rem, 3.4rem, 5rem);
-    height: clamp(2.2rem, 3.4rem, 5rem);
-    padding: 0.25rem;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .container {
-    margin: 6rem auto 0.5rem;
-    padding: 0 1rem;
-    min-width: 85%;
-    max-width: 89%;
-  }
-
-  .container h1 {
-    margin-top: 0.25rem;
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .intro {
-    padding: 0.4rem;
-    margin: 0.5rem;
-  }
-
-  .intro p {
-    margin-top: 0;
-    font-size: clamp(0.6rem, 0.799rem, 0.8rem);
-  }
-
-  .brand {
-    margin: 0.5rem;
-    padding: 0.4rem 0;
-    border-radius: 0.5rem;
-  }
-
-  .brand-group {
-    gap: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
-  .brand img {
-    width: clamp(1.75rem, 2.5rem, 3.5rem);
-    height: clamp(1.75rem, 2.5rem, 3.5rem);
-    padding: 0.15rem;
-  }
-}
-
 @keyframes marquee {
   from {
     transform: translateX(0);
@@ -163,3 +101,226 @@
     transform: translateX(-50%);
   }
 }
+
+/* =====================================================
+   Responsive Design Breakpoints
+===================================================== */
+
+/* Extra Large Screens & TV/4K Displays (27"+ Monitors, 4K displays)
+   Extrapolated upward past the 1440px base design */
+@media (min-width: 1201px) {
+  .container {
+    margin: 5.08rem auto 0.96rem;
+    padding: 0 1.92rem;
+    min-width: 80.44%;
+    max-width: 83.42%;
+  }
+  .container h1 {
+    margin-top: 0.94rem;
+    font-size: 1.94rem;
+    margin-bottom: 1.23rem;
+  }
+  .intro {
+    padding: 0.94rem;
+    margin: 1.87rem;
+  }
+  .intro p {
+    font-size: clamp(0.81rem, 0.95vw + 0.65rem, 1.26rem);
+  }
+  .brand {
+    margin: 1.87rem;
+    padding: 0.94rem 0;
+  }
+  .brand-group {
+    gap: 8.45rem;
+    margin-right: 8.45rem;
+  }
+  .brand img {
+    width: clamp(2.14rem, 3.25rem, 4.88rem);
+    height: clamp(2.14rem, 3.25rem, 4.88rem);
+    padding: 0.29rem;
+  }
+}
+
+/* Large Laptops & Standard Desktops (Common 24" Monitors, iMac 21.5")
+   Interpolated for the 1025px to 1200px range */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    margin: 5.22rem auto 0.89rem;
+    padding: 0 1.78rem;
+    min-width: 81.13%;
+    max-width: 84.29%;
+  }
+  .container h1 {
+    margin-top: 0.84rem;
+    font-size: 1.84rem;
+    margin-bottom: 1.12rem;
+  }
+  .intro {
+    padding: 0.86rem;
+    margin: 1.67rem;
+  }
+  .intro p {
+    font-size: clamp(0.77rem, 0.95vw + 0.65rem, 1.19rem);
+  }
+  .brand {
+    margin: 1.67rem;
+    padding: 0.86rem 0;
+  }
+  .brand-group {
+    gap: 7.55rem;
+    margin-right: 7.55rem;
+  }
+  .brand img {
+    width: clamp(2.09rem, 3.15rem, 4.65rem);
+    height: clamp(2.09rem, 3.15rem, 4.65rem);
+    padding: 0.27rem;
+  }
+}
+
+/* Tablets (Landscape) / Laptops (iPad Pro, MacBook Air 13", Chromebooks)
+   Interpolated for the 769px to 1024px range */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    margin: 5.43rem auto 0.79rem;
+    padding: 0 1.58rem;
+    min-width: 82.16%;
+    max-width: 85.58%;
+  }
+  .container h1 {
+    margin-top: 0.68rem;
+    font-size: 1.68rem;
+    margin-bottom: 0.96rem;
+  }
+  .intro {
+    padding: 0.74rem;
+    margin: 1.36rem;
+  }
+  .intro p {
+    font-size: clamp(0.71rem, 0.91vw + 0.64rem, 1.1rem);
+  }
+  .brand {
+    margin: 1.36rem;
+    padding: 0.74rem 0;
+  }
+  .brand-group {
+    gap: 6.2rem;
+    margin-right: 6.2rem;
+  }
+  .brand img {
+    width: clamp(2rem, 2.95rem, 4.3rem);
+    height: clamp(2rem, 2.95rem, 4.3rem);
+    padding: 0.24rem;
+  }
+}
+
+/* Tablets (Portrait) (iPad Mini, iPad Air, Samsung Galaxy Tab)
+   Interpolated for the 481px to 768px range */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin: 5.74rem auto 0.63rem;
+    padding: 0 1.27rem;
+    min-width: 83.69%;
+    max-width: 87.43%;
+  }
+  .container h1 {
+    margin-top: 0.46rem;
+    font-size: 1.46rem;
+    margin-bottom: 0.72rem;
+  }
+  .intro {
+    padding: 0.56rem;
+    margin: 0.91rem;
+  }
+  .intro p {
+    font-size: clamp(0.63rem, 0.81vw + 0.6rem, 0.94rem);
+  }
+  .brand {
+    margin: 0.91rem;
+    padding: 0.56rem 0;
+  }
+  .brand-group {
+    gap: 4.28rem;
+    margin-right: 4.28rem;
+  }
+  .brand img {
+    width: clamp(1.88rem, 2.68rem, 3.78rem);
+    height: clamp(1.88rem, 2.68rem, 3.78rem);
+    padding: 0.19rem;
+  }
+}
+
+/* Mobile (Portrait) (iPhone 13/14/15/16, Samsung Galaxy S23/S24, Google Pixel 8/9)
+   Interpolated for the 320px to 480px range */
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    margin: 5.97rem auto 0.52rem;
+    padding: 0 1.03rem;
+    min-width: 84.84%;
+    max-width: 88.81%;
+  }
+  .container h1 {
+    margin-top: 0.28rem;
+    font-size: 1.28rem;
+    margin-bottom: 0.53rem;
+  }
+  .intro {
+    padding: 0.42rem;
+    margin: 0.56rem;
+  }
+  .intro p {
+    font-size: clamp(0.6rem, 0.71vw + 0.6rem, 0.77rem);
+  }
+  .brand {
+    margin: 0.56rem;
+    padding: 0.42rem 0;
+    border-radius: 0.5rem;
+  }
+  .brand-group {
+    gap: 2.76rem;
+    margin-right: 2.76rem;
+  }
+  .brand img {
+    width: clamp(1.76rem, 2.51rem, 3.51rem);
+    height: clamp(1.76rem, 2.51rem, 3.51rem);
+    padding: 0.16rem;
+  }
+}
+
+/* 340px — Devices: Legacy ultra-small mobile formats, secondary feature phone 
+   web-browsers (e.g., JioPhone, older Nokia smart-feature lines), and narrow 
+   multi-window mobile viewports. Kept completely intact as requested.
+@media (max-width: 340px) {
+  .container {
+    margin: 6.1rem auto 0.45rem;
+    padding: 0 0.9rem;
+    min-width: 85.48%;
+    max-width: 89.58%;
+  }
+  .container h1 {
+    margin-top: 0.18rem;
+    font-size: 1.18rem;
+    margin-bottom: 0.42rem;
+  }
+  .intro {
+    padding: 0.33rem;
+    margin: 0.36rem;
+  }
+  .intro p {
+    font-size: clamp(0.55rem, 0.799rem, 0.73rem);
+  }
+  .brand {
+    margin: 0.36rem;
+    padding: 0.33rem 0;
+    border-radius: 0.5rem;
+  }
+  .brand-group {
+    gap: 1.85rem;
+    margin-right: 1.85rem;
+  }
+  .brand img {
+    width: clamp(1.68rem, 2.45rem, 3.45rem);
+    height: clamp(1.68rem, 2.45rem, 3.45rem);
+    padding: 0.13rem;
+  }
+}*/
