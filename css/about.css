@@ -61,7 +61,8 @@
   background: var(--color-container-outer);
   padding: 1rem 0;
   border-radius: 0.5rem;
-  margin: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   box-shadow: var(--shadow-soft-double);
 }
 
@@ -93,45 +94,18 @@
   flex-shrink: 0;
 }
 
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 /* =====================================================
    Responsive Design Breakpoints
 ===================================================== */
-
-/* Extra Large Screens & TV/4K Displays (27"+ Monitors, 4K displays)
-   Extrapolated upward past the 1440px base design */
-@media (min-width: 1201px) {
-  .container {
-    margin: 5.08rem auto 0.96rem;
-    padding: 0 1.92rem;
-    min-width: 80.44%;
-    max-width: 83.42%;
-  }
-  .container h1 {
-    margin-top: 0.94rem;
-    font-size: 1.94rem;
-    margin-bottom: 1.23rem;
-  }
-  .intro {
-    padding: 0.94rem;
-    margin: 1.87rem;
-  }
-  .intro p {
-    font-size: clamp(0.81rem, 0.95vw + 0.65rem, 1.26rem);
-  }
-  .brand {
-    margin: 1.87rem;
-    padding: 0.94rem 0;
-  }
-  .brand-group {
-    gap: 8.45rem;
-    margin-right: 8.45rem;
-  }
-  .brand img {
-    width: clamp(2.14rem, 3.25rem, 4.88rem);
-    height: clamp(2.14rem, 3.25rem, 4.88rem);
-    padding: 0.29rem;
-  }
-}
 
 /* Large Laptops & Standard Desktops (Common 24" Monitors, iMac 21.5")
    Interpolated for the 1025px to 1200px range */
@@ -315,12 +289,3 @@
     padding: 0.13rem;
   }
 }*/
-
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
