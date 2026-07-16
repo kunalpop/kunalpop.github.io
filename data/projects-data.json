@@ -44,7 +44,7 @@
       "Artificial Intelligence and Machine Learning",
       "Statistics"
     ],
-    "description": "Fine-tuned BERT and ALBERT with span-labelling heads to build an extractive question answering system that extracts answers as a contiguous span of text from a passage, achieving benchmark-level F1 and Exact Match (EM) performance, validating the effectiveness of transformer-based models for extractive question answering. Its application domains include customer service, knowledge management, legal and financial information extraction, and public information systems.",
+    "description": "Fine-tuned BERT and ALBERT with span-labelling heads to build an extractive question answering system that extracts answers as a contiguous span of text from a passage, achieving F1 and Exact Match (EM) performance at par with the benchmark, validating the effectiveness of transformer-based models for extractive question answering. Its application domains include customer service, knowledge management, legal and financial information extraction, and public information systems.",
     "techLabel": "Technical Skills:",
     "tech": [
       "Span Labelling",
