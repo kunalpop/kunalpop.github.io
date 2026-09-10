@@ -15,17 +15,21 @@ html {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100%;
   max-width: 80%;
-  margin: 6rem auto 1rem;
+
+  /* Leave room for the fixed 4rem nav on top; keep bottom tight.
+     No fixed height — flex layout in style.css sizes it to one viewport. */
+  margin: 4.5rem auto 0.5rem;
   padding: 0 2rem;
+
+  min-height: 0; /* allow shrinking so footer stays on screen */
 
   text-align: center;
 
   background-color: var(--color-container-outline);
   background: rgba(249, 250, 251, 0);
 
-  flex: 1;
+  flex: 1 1 auto;
 }
 
 .container h1 {
@@ -53,17 +57,18 @@ html {
 }
 
 .container .profile h1 {
-  margin-top: 2rem;
-  font-size: 2rem;
+  margin-top: clamp(0.5rem, 2vh, 2rem);
+  font-size: clamp(1.4rem, 1rem + 2vh, 2rem);
   color: var(--color-text-light);
 }
 
 .container .profile img {
-  width: clamp(9rem, 11rem, 13rem);
-  height: clamp(9rem, 11rem, 13rem);
+  /* Scale the avatar with viewport height so it shrinks on short screens. */
+  width: clamp(6rem, 18vh, 13rem);
+  height: clamp(6rem, 18vh, 13rem);
   border-radius: 50%;
   object-fit: cover;
-  margin-top: 3rem;
+  margin-top: clamp(0.75rem, 4vh, 3rem);
   border: 0.2rem solid var(--color-image-border);
   box-shadow: var(--shadow-soft);
 }
@@ -83,8 +88,8 @@ html {
 
 .container .profile .tagline {
   max-width: 60%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: clamp(0.4rem, 1.5vh, 1rem);
+  margin-bottom: clamp(0.4rem, 1.5vh, 1rem);
   letter-spacing: 0.2em;
   font-size: 0.9rem;
   font-weight: 900;
@@ -98,8 +103,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  gap: clamp(1rem, 4vw, 2rem);
+  margin-bottom: clamp(0.75rem, 4vh, 3rem);
   background-color: var(--color-nav-background);
   padding: 0.5rem 1rem;
   border-radius: 1rem;
@@ -130,14 +135,14 @@ html {
 /* Tablet + Mobile */
 @media (max-width: 768px) {
   .container .profile h1 {
-    font-size: 1.8rem;
-    margin-top: 1.5rem;
+    font-size: clamp(1.3rem, 1rem + 2vh, 1.8rem);
+    margin-top: clamp(0.5rem, 2vh, 1.5rem);
   }
 
   .container .profile img {
-    margin-top: 2rem;
-    width: clamp(8rem, 10rem, 12rem);
-    height: clamp(8rem, 10rem, 12rem);
+    margin-top: clamp(0.75rem, 3vh, 2rem);
+    width: clamp(6rem, 16vh, 12rem);
+    height: clamp(6rem, 16vh, 12rem);
   }
 
   .container .profile .tagline {
@@ -146,13 +151,48 @@ html {
   }
 
   .container .profile .social-links {
-    gap: 1.5rem;
-    margin-top: 3rem; /* gap from tagline */
-    margin-bottom: 2rem;
+    gap: clamp(1rem, 5vw, 1.5rem);
+    margin-top: clamp(0.75rem, 4vh, 3rem); /* gap from tagline */
+    margin-bottom: clamp(0.75rem, 3vh, 2rem);
   }
 
   .container .profile .social-links a i {
     font-size: 1.6rem;
+  }
+}
+
+/* Short viewports (13"/15" laptops in landscape are wide but only ~700-800px
+   tall). Collapse vertical spacing and shrink the avatar so profile + footer
+   fit without scrolling. */
+@media (max-height: 800px) {
+  .container {
+    margin-top: 4.25rem;
+  }
+
+  .container .profile img {
+    width: clamp(5rem, 20vh, 9rem);
+    height: clamp(5rem, 20vh, 9rem);
+    margin-top: clamp(0.5rem, 2.5vh, 1.5rem);
+  }
+
+  .container .profile h1 {
+    margin-top: clamp(0.4rem, 1.5vh, 1rem);
+  }
+
+  .container .profile .social-links {
+    margin-bottom: clamp(0.5rem, 2.5vh, 1.5rem);
+  }
+}
+
+@media (max-height: 600px) {
+  .container .profile img {
+    width: clamp(4rem, 22vh, 7rem);
+    height: clamp(4rem, 22vh, 7rem);
+    margin-top: 0.5rem;
+  }
+
+  .container .profile .social-links a i {
+    font-size: 1.4rem;
   }
 }
 

@@ -33,38 +33,90 @@ GLOBAL VARIABLES
 /* =====================================================
    GLOBAL STYLES
 ===================================================== */
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-  min-height: 100%;
+  /* Lock the page to exactly one viewport tall.
+     100dvh (dynamic viewport height) accounts for mobile browser toolbars
+     that 100vh ignores, preventing phantom scroll on iPhone / Oppo Reno 11. */
+  height: 100vh;
+  height: 100dvh;
   width: 100%;
 
   margin: 0;
   color: var(--color-text);
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow: hidden; /* single viewport: never scroll the page itself */
 
   display: flex;
   flex-direction: column;
+
+  /* About page has no .background-overlay wrapper, so put the backdrop
+     on body too. .background-overlay (index page) overrides it below. */
+  background-image: url("images/singapore_QHD.jpg");
+  background-size: cover;
+  background-position: center 10%;
 }
 
 body .background-overlay {
   background-image: url("images/singapore_QHD.jpg");
   background-size: cover;
   background-position: center 10%;
-  min-height: 100vh;
+
+  /* Fill the body exactly and distribute nav / content / footer within it. */
+  flex: 1 1 auto;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+/* =====================================================
+   COMPONENT WRAPPERS — propagate the flex height chain
+   The pages inject content into #profile-container / #about-container and
+   a #footer-container. Those wrappers (and the custom-element tags inside
+   them) are plain blocks by default, which would break the flex sizing and
+   let content overflow the viewport. Make them transparent flex links so the
+   height constraint reaches .container. Applies to both index (inside
+   .background-overlay) and about (directly in body).
+===================================================== */
+#profile-container,
+#about-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+}
+
+#profile-container > profile-component,
+#profile-container > landing-component,
+#about-container > about-component {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+}
+
+#footer-container {
+  flex: 0 0 auto;
+}
+
 .background-overlay .container {
   display: flex;
   flex-direction: column;
-  height: 100%;
   max-width: 80%;
   text-align: center;
-  flex: 1 0 0 auto;
+
+  /* Take the space between nav and footer, but allow shrinking so the
+     footer always stays on-screen. min-height:0 lets inner content clamp. */
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 .background-overlay footer {
