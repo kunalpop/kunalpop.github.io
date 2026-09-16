@@ -9,17 +9,43 @@ html {
   height: 100%;
 }
 
+body {
+  height: 100vh;
+  min-height: 0;
+  overflow: hidden;
+}
+
+#about-container {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+  padding-top: 4rem;
+}
+
+#about-container > about-component {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
 /* =====================================================
    PAGE LAYOUT
 ===================================================== */
 .container {
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
   box-sizing: border-box;
+  min-height: 0;
   min-width: 80%;
   max-width: 83%;
-  margin: 5rem auto 1rem;
+  margin: 1rem auto;
   padding: 0 2rem;
+  overflow-y: auto;
 
   text-align: center;
 
@@ -65,6 +91,7 @@ html {
   font-size: clamp(0.95rem, 1.1vw + 0.7rem, 1.3rem);
 }
 .brand {
+  flex-shrink: 0;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -80,6 +107,17 @@ html {
   max-width: 90%;
   text-align: center;
   box-shadow: var(--shadow-soft-double);
+}
+
+#about-container > about-component > .container {
+  margin: 1rem auto;
+}
+
+@media (min-width: 1201px) {
+  .intro p {
+    font-size: 1.6rem;
+    line-height: 1.55;
+  }
 }
 
 .brand-track {
