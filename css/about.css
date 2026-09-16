@@ -10,8 +10,8 @@ html {
 }
 
 body {
-  height: 100vh;
-  min-height: 0;
+  height: 100dvh;
+  min-height: 100dvh;
   overflow: hidden;
 }
 
@@ -30,6 +30,10 @@ body {
   flex-direction: column;
   min-height: 0;
   overflow: hidden;
+}
+
+#footer-container {
+  flex: 0 0 auto;
 }
 
 /* =====================================================
