@@ -16,18 +16,20 @@ body {
 }
 
 #about-container {
+  --about-vertical-gap: 1rem;
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
   min-height: 0;
   overflow: hidden;
-  padding-top: 4rem;
+  padding: calc(4rem + var(--about-vertical-gap)) 0 var(--about-vertical-gap);
 }
 
 #about-container > about-component {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
+  gap: var(--about-vertical-gap);
   min-height: 0;
   overflow: hidden;
 }
@@ -41,20 +43,17 @@ body {
 ===================================================== */
 .container {
   display: flex;
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   flex-direction: column;
   box-sizing: border-box;
   min-height: 0;
   min-width: 80%;
   max-width: 83%;
-  margin: 1rem auto;
+  margin: 0 auto;
   padding: 0 2rem;
-  overflow-y: auto;
+  overflow: hidden;
 
   text-align: center;
-
-  background-color: var(--color-container-outline);
-  background: rgba(249, 250, 251, 0);
 }
 
 .container h1 {
@@ -73,9 +72,13 @@ body {
 ===================================================== */
 .intro {
   display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: safe center;
+  gap: 1rem;
   box-sizing: border-box;
+  overflow-y: auto;
 
   background: var(--color-container-outer);
 
@@ -85,11 +88,13 @@ body {
   border-radius: 0.5rem;
   margin: 2rem;
 
-  box-shadow: var(--shadow-soft-double);
+  box-shadow: inset 0 0 0.6rem rgba(0, 0, 0, 0.14);
 }
 
 .intro p {
   width: 100%;
+  flex: 0 0 auto;
+  margin: 0;
   box-sizing: border-box;
   overflow-wrap: break-word;
   font-size: clamp(0.95rem, 1.1vw + 0.7rem, 1.3rem);
@@ -110,11 +115,15 @@ body {
 
   max-width: 90%;
   text-align: center;
-  box-shadow: var(--shadow-soft-double);
+  box-shadow: inset 0 0 0.6rem rgba(0, 0, 0, 0.14);
 }
 
 #about-container > about-component > .container {
-  margin: 1rem auto;
+  margin: 0 auto;
+}
+
+#about-container > about-component > .brand {
+  margin: 0 auto;
 }
 
 @media (min-width: 1201px) {
@@ -347,3 +356,31 @@ body {
     padding: 0.13rem;
   }
 }*/
+
+#about-container > about-component > .container {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#about-container > about-component > .container > .intro {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#about-container > about-component > .brand {
+  flex: 0 0 auto;
+  margin: 0 auto;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  #about-container {
+    --about-vertical-gap: clamp(1.25rem, 3vh, 2rem);
+    padding-top: calc(4rem + var(--about-vertical-gap));
+    padding-bottom: var(--about-vertical-gap);
+  }
+}
