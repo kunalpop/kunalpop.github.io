@@ -56,6 +56,7 @@ html {
   margin-top: 2rem;
   font-size: 2rem;
   color: var(--color-text-light);
+  transform: translateY(1.30rem);
 }
 
 .container .profile img {
@@ -66,6 +67,7 @@ html {
   margin-top: 3rem;
   border: 0.2rem solid var(--color-image-border);
   box-shadow: var(--shadow-soft);
+  transform: translateY(1.30rem);
 }
 
 .container .profile .profile-description {
@@ -232,7 +234,7 @@ html {
 
 .back-link {
   display: inline-block;
-  margin-top: 1.25rem;
+  margin-top: 1.30rem;
 
   text-decoration: none;
   color: var(--color-success);
@@ -297,7 +299,7 @@ body:has(#profile-container) .background-overlay {
 
   .container .profile h1 {
     margin-top: 0.35rem;
-    font-size: clamp(1.25rem, 5vw, 1.8rem);
+    font-size: clamp(1.30rem, 5vw, 1.8rem);
   }
 
   .container .profile h2,
@@ -320,7 +322,7 @@ body:has(#profile-container) .background-overlay {
   }
 
   .container .profile .social-links a i {
-    font-size: clamp(1.25rem, 6vw, 1.6rem);
+    font-size: clamp(1.30rem, 6vw, 1.6rem);
   }
 }
 
@@ -343,6 +345,6 @@ body:has(#profile-container) .background-overlay {
   }
 
   .qr-container h1 {
-    font-size: 1.25rem;
+    font-size: 1.30rem;
   }
 }
